@@ -2,6 +2,8 @@
 {% block body %}
 <script type=text/javascript>
   $(function() {
+    
+    /*
     var submit_form = function(e) {
       $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
         fun: $('input[name="fun"]').val(),
@@ -12,7 +14,7 @@
       });
       return false;
     };
-
+*/
     var run_cmd = function(e) {
       var data = e.data;
       $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
@@ -24,6 +26,39 @@
       });
       return false;
     };
+
+    var run_cmd_this = function(e) {
+      var data = "";
+      var mfun ="";
+      var mparam = "";
+      var mval = "";
+      
+      if (this.id.indexOf("_") > 0) {
+          mfun   = this.id.substr(0, this.id.indexOf("_")).toUpperCase()
+          mparam = this.id.substr(this.id.indexOf("_")+1, this.id.length)
+          if (mparam.indexOf("-") > 0) {
+            mval = mparam.substr(mparam.indexOf("-")+1, mparam.length)
+            mparam = mparam.substr(0, mparam.indexOf("-") )
+          }
+
+          $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
+            fun: mfun,
+            param: mparam,
+            val: mval
+          }, function(data) {
+            $('#result').text(data.result);
+            //$('input[name=fun]').focus().select();
+          });
+      }
+      return false;
+    };
+    
+    $('a').bind('click', {}, run_cmd_this);
+/*
+var dict = [];
+undefined
+dict.push({cmd:"TV", param:"on", val:""})
+for(var i = 0; i < dict.length; i++) { console.log( dict[i].cmd) }
 
     $('a#tv_on').bind('click', {fun: 'on', param: ''}, run_cmd);
     $('a#tv_off').bind('click', {fun: 'off', param: ''}, run_cmd);
@@ -45,15 +80,16 @@
     $('a#ncplus_ok').bind('click', {fun: 'ncplus', param: 'ok'}, run_cmd);
     $('a#ncplus_back').bind('click', {fun: 'ncplus', param: 'back'}, run_cmd);
     $('a#wol_htpc').bind('click', {fun: 'wol', param: 'htpc'}, run_cmd);
-
+*/
+  
     //$('a#calculate').bind('click', submit_form);
-
+/*
     $('input[type=text]').bind('keydown', function(e) {
       if (e.keyCode == 13) {
         submit_form(e);
       }
     });
-
+*/
     //$('input[name=fun]').focus();
   });
 </script>
@@ -61,11 +97,11 @@
             <div class="grids">
                   <div class="grid-10 grid">
 
-                    <h2>Wybierz opcję</h2>
+<!--                     <h2>Wybierz opcję</h2> -->
 
                     <p><a href=# id=tv_on  class="button">Włącz TV</a>&nbsp;&nbsp;<a href=# id=tv_off  class="button">Wyłącz TV</a>
                     <br/>
-                    <a href=# id=source1  class="button">HDMI 1</a>&nbsp;&nbsp;<a href=# id=source2  class="button">HDMI 2</a>&nbsp;&nbsp;<a href=# id=source3  class="button">HDMI 3</a>
+                    <a href=# id=TV_HDMI1  class="button">HDMI 1</a>&nbsp;&nbsp;<a href=# id=TV_HDMI2  class="button">HDMI 2</a>&nbsp;&nbsp;<a href=# id=tv_HDMI3  class="button">HDMI 3</a>
                     <hr /> 		
                     <p><a href=# id=ncplus_power  class="button">Włącz NC+</a>&nbsp;&nbsp;<a href=# id=ncplus_mute  class="button">Mute NC+</a>
                     <br/>
@@ -78,9 +114,11 @@
                     <br/>
                     <a href=# id=ncplus_left class="button">&lt;</a>&nbsp;<a href=# id=ncplus_right class="button" >&gt;</a>
                     <hr /> 		
-                    <p><a href=# id=lamp_on  class="button">Włącz głośnik</a>&nbsp;&nbsp;<a href=# id=lamp_off  class="button">Wyłącz głośnik</a>
+                    <p><a href=# id=ZWAVE_speakers-on  class="button">Włącz głośnik</a>&nbsp;&nbsp;<a href=# id=ZWAVE_speakers-off  class="button">Wyłącz głośnik</a>
                     <hr />
-                    <p><a href=# id=wol_htpc class="button">Włącz HTPC</a>&nbsp;&nbsp;<a href=# id=htpc_suspend  class="button">Wyłącz HTPC</a>
+                    <p><a href=# id=wol_htpc class="button">Włącz HTPC</a>&nbsp;&nbsp;<a href=# id=x10_power  class="button">Wyłącz HTPC</a>
+                    <hr />
+                    <p><a href=# id=wol_pr_p class="button">XBMC Głoś. +</a>&nbsp;&nbsp;<a href=# id=x10_pr_m  class="button">XBMC Głoś. -</a>
 
                   </div><!--end of grid-10--> 
             </div><!--end of grids-->

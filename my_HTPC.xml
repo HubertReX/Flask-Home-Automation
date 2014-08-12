@@ -1,0 +1,4389 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EventGhost Version="1544" Guid="{E8AE8E70-7E31-4EF6-8FEF-37E941F49FA6}" Time="1407792682.64">
+    <Autostart Name="Autostart" Expanded="True">
+        <Plugin Enabled="False" Identifier="ZoomPlayer" Guid="{C5E2609E-C1C4-4432-A532-EDA79A7EE41D}" File="ZoomPlayer">
+            gAIoWAkAAABsb2NhbGhvc3RxAE2hEoiJdHEBLg==
+        </Plugin>
+        <Plugin Enabled="False" Identifier="Winamp" Guid="{4A22DD6A-5E2C-4500-90B4-47F5C58FD9CA}" File="Winamp">
+            gAIpLg==
+        </Plugin>
+        <Plugin Identifier="Task" Guid="{D1748551-C605-4423-B392-FB77E6842437}" File="Task">
+            gAIpLg==
+        </Plugin>
+        <Plugin Identifier="X10" Guid="{C3E96757-E507-4CC3-A2E6-465D48B87D09}" File="X10_bckp">
+            gAJLAV1xAChLAUsCSwNLBEsFSwZLB0sISwlLCksLSwxLDUsOSw9LEGVYAwAAAFgxMHEBh3ECLg==
+        </Plugin>
+        <Plugin Identifier="XBMC2" Guid="{2DD98E35-F060-4444-9F11-168CD8131A6B}" File="XBMCRepeat">
+            gAJYCQAAADEyNy4wLjAuMXEAWAIAAAA4MHEBhnECLg==
+        </Plugin>
+        <Action Enabled="False">
+            EventGhost.EnableExclusive(XmlIdLink(1223))
+        </Action>
+        <Plugin Identifier="PowerDvd" Guid="{4DBDFFA7-9E47-4782-B843-B196C74DE3EF}" File="PowerDVD">
+            gAIpLg==
+        </Plugin>
+        <Plugin Enabled="False" Identifier="VLC" Guid="{02929D1C-7567-414C-84D1-F8D71D6FD7B3}" File="VLC">
+            gAJYCQAAAGxvY2FsaG9zdHEATdIEiIdxAS4=
+        </Plugin>
+        <Plugin Enabled="False" Identifier="Speech" Guid="{76A1638D-1D7D-4582-A726-A17B1A6FC723}" File="Speech">
+            gAIpLg==
+        </Plugin>
+        <Plugin Enabled="False" Identifier="MCE_Vista" Guid="{A7DB04BB-9F0A-486A-BCA1-CA87B9620D54}" File="MceRemote_Vista">
+            gAIpLg==
+        </Plugin>
+        <Plugin Identifier="MceRemote" Guid="{02181DB1-F29D-4CCB-BF91-7A86EFB0D22C}" File="MceRemote">
+            gAJHP8MzMzMzMzOIhnEALg==
+        </Plugin>
+        <Action Name="Start Program: iMon">
+            System.Execute(u'd:\\Software\\SOUNDGRAPH\\iMON\\iMON.exe', u'/startup', 0, False, 2, u'', False)
+        </Action>
+        <Action Name="Start Program: XbmcOniMon" Enabled="False">
+            System.Execute(u'D:\\Software\\xbmc-on-imon-v0.1.9.5\\XbmcOniMon.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action Enabled="False">
+            System.Execute(u'd:\\Software\\SABnzbd\\SABnzbd.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action Enabled="False">
+            System.Execute(u'd:\\Software\\SickBeard\\SickBeard.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action Enabled="False">
+            System.Execute(u'D:\\Software\\CouchPotatoServer\\CouchPotatoServer\\CouchPotato.bat', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action Enabled="False">
+            System.Execute(u'D:\\Software\\Maraschino\\maraschino.bat', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action>
+            System.Execute(u'D:\\Software\\NetWorx\\networx.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action>
+            System.Execute(u'C:\\Program Files (x86)\\SpeedFan\\speedfan.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action Name="Start Program: Dropbox">
+            System.Execute(u'C:\\Users\\Player\\AppData\\Roaming\\Dropbox\\bin\\Dropbox.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action>
+            System.Execute(u'C:\\Users\\Player\\AppData\\Roaming\\uTorrent\\uTorrent.exe', u'/MINIMIZED', 1, False, 2, u'', False)
+        </Action>
+        <Action>
+            System.Execute(u'd:\\Program Files (x86)\\FreeDNS Update\\FreeDNSUpdate.exe', u'', 0, False, 2, u'', False)
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'startup.xbmc', 0.0)
+        </Action>
+        <Action>
+            EventGhost.Wait(6.0)
+        </Action>
+        <Action>
+            Window.FindWindow(u'XBMC.exe', None, None, None, None, None, False, 0.0, 0)
+        </Action>
+        <Action>
+            Window.Restore()
+        </Action>
+        <Action>
+            Window.BringToFront()
+        </Action>
+        <Plugin Enabled="False" Identifier="DirectoryWatcher" Guid="{003FABA6-AA6A-4395-9DB6-DC88EB07F5FE}" File="DirectoryWatcher">
+            gAJYIAAAAEQ6XERvd25sb2FkXHRvcnJlbnRcY29tcGxldGVkXFRWcQCJhnEBLg==
+        </Plugin>
+        <Plugin Enabled="False" Identifier="DirectoryWatcher2" Guid="{003FABA6-AA6A-4395-9DB6-DC88EB07F5FE}" File="DirectoryWatcher">
+            gAJYIwAAAEQ6XERvd25sb2FkXHRvcnJlbnRcY29tcGxldGVkXG1vdmllcQCJhnEBLg==
+        </Plugin>
+        <Action Name="Start Program: RealtimeSync.exe">
+            System.Execute(u'D:\\Software\\FreeFileSync\\RealtimeSync.exe', u'"D:\\Pictures\\Synchr_z_Ania_laptopem.ffs_batch"', 0, False, 2, u'', False)
+        </Action>
+        <Plugin Enabled="False" Identifier="E_mail" Guid="{8BEB93CE-242E-46B5-A17A-D9737D362E1E}" File="email">
+            gAIoXXEAXXEBKFgFAAAAZ21haWxxAksAWAAAAABxA1gZAAAAaHViZXJ0Lm5hZmFsc2tpQGdtYWlsLmNvbXEEaANYDQAAAHBvcC5nbWFpbC5jb21xBU3jA1gZAAAAaHViZXJ0Lm5hZmFsc2tpQGdtYWlsLmNvbXEGWAUAAABnbWFpbHEHSwOIZWFdcQhdcQkoaAdYDgAAAHNtdHAuZ21haWwuY29tcQpNSwJLAoloA2VhXXELXXEMY2VnLlV0aWxzCkJ1bmNoCnENKYFxDn1xD1UEZGF0YXEQfXERWAUAAABnbWFpbHESWAkAAABPcGVuR0wxLjNxE3NzYmgNKYFxFH1xFWgQfXEWc2J0cRcu
+        </Plugin>
+        <Plugin id="16" Identifier="SamsungCommunicator" Guid="SamsungSmartTV" File="SamsungSmartTV">
+            gAIoWA0AAAAxOTIuMTY4LjEuMTA0cQBN2NZYDQAAADE5Mi4xNjguMS4xMDBxAVgRAAAAZjQtNmQtMDQtOTMtMTEtODJxAnRxAy4=
+        </Plugin>
+        <Plugin Identifier="ExportActiveContext" Guid="ExportActiveContext" File="ExportActiveContext">
+            gAIpLg==
+        </Plugin>
+        <Plugin Enabled="False" Identifier="NetworkReceiver" Guid="{8F35AE6D-AF12-4A94-AA91-4B63F0CBBE1C}" File="NetworkReceiver">
+            gAJNAARYBwAAAGtvbnJhZDFxAFgDAAAAVENQcQGHcQIu
+        </Plugin>
+        <Plugin Identifier="Webserver" Guid="{E4305D8E-A3D3-4672-B06E-4EA1F0F6C673}" File="Webserver">
+            gAIoWAMAAABYMTBxAE1IH1guAAAARDpcU29mdHdhcmVcRXZlbnRHaG9zdFxwbHVnaW5zXFdlYnNlcnZlclxodHBjXHEBWAoAAABFdmVudEdob3N0cQJYBgAAAHBsYXllcnEDWAcAAABrb25yYWQxcQR0cQUu
+        </Plugin>
+        <Plugin Enabled="False" Identifier="Joystick" Guid="{615F3B89-FB7E-4FD9-B7D5-9F07FEF0BED9}" File="Joystick">
+            gAIpLg==
+        </Plugin>
+        <Plugin Identifier="iMON_Display" Guid="{A13E8F21-69CC-4E4D-895D-F24C1656BD9E}" File="iMONDisplay">
+            gAJHP8mZmZmZmZpLAkseh3EALg==
+        </Plugin>
+        <Plugin Identifier="Window2" Guid="ncplus_control" File="ncplus_control">
+            gAIpLg==
+        </Plugin>
+    </Autostart>
+    <Macro Name="uTorrent TV Show Processor">
+        <Event Name="DirectoryWatcher.Created" />
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action Name="Move Video and ZIP to proper Folders">
+            EventGhost.PythonScript(u"import shutil\nimport os\nimport re\n\nDownloadName = ''.join(eg.event.payload)\nFileName = os.path.basename(DownloadName)\nisFolder = os.path.isdir(DownloadName)\neg.globals.tvzip = 'D:\\\\Download\\\\torrent\\\\completed\\\\TVzip\\\\'\neg.globals.tvzipdir = eg.globals.tvzip+FileName+'\\\\'\neg.globals.tvproc = 'D:\\\\Download\\\\torrent\\\\completed\\\\TVproc\\\\'\n\n\nSubFileTypes = ('sub','srt','txt')\nZipFileTypes = ('rar','zip','7z')\nMediaFileTypes = ('mkv','avi','mp4','wmv', 'm2ts', 'iso', 'mpg', 'mpeg')\n\n    \nif isFolder == True:\n    os.mkdir(eg.globals.tvzipdir)\n    for root, dirs, files in os.walk(DownloadName):\n        for f in files:\n            if f.endswith(ZipFileTypes) or re.search(r'\\.r\\d+$', f):\n                shutil.copy(os.path.join(root,f),eg.globals.tvzipdir)\n            if f.endswith(SubFileTypes) or f.endswith(MediaFileTypes):\n                shutil.copy(os.path.join(root,f),eg.globals.tvproc)\n\nelif isFolder == False:\n    shutil.copy(DownloadName,eg.globals.tvproc)\n\nelse:\n    print 'I\\'m confused!'\n    ")
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            System.Execute(u'd:\\Software\\SCRU\\SCRU.exe', u'"D:\\Download\\torrent\\completed\\TVzip" "D:\\Download\\torrent\\completed\\TVproc"', 3, True, 2, u'', False)
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            System.Execute(u'D:\\Software\\theRenamer\\theRenamer.exe', u'-fetch', 3, True, 2, u'', False)
+        </Action>
+        <Action Name="Clean whatever is left in ZIP and PROC">
+            EventGhost.PythonScript(u'import os\nimport shutil\n\nfor root, dirs, files in os.walk(eg.globals.tvzip):\n    for f in files:\n        os.remove(os.path.join(root, f))\n    for d in dirs:\n        shutil.rmtree(os.path.join(root, d))\n            \nfor root, dirs, files in os.walk(eg.globals.tvproc):\n    for f in files:\n        os.remove(os.path.join(root, f))\n    for d in dirs:\n        shutil.rmtree(os.path.join(root, d))\n       ')
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            XBMC2.UpdateVideoLibrary()
+        </Action>
+    </Macro>
+    <Macro Name="uTorrent Moive Processor">
+        <Event Name="DirectoryWatcher2.Created" />
+        <Action>
+            EventGhost.Wait(8.0)
+        </Action>
+        <Action Name="Move Video and ZIP to proper Folders">
+            EventGhost.PythonScript(u"import shutil\nimport os\nimport re\n\nDownloadName = ''.join(eg.event.payload)\nFileName = os.path.basename(DownloadName)\nisFolder = os.path.isdir(DownloadName)\neg.globals.moviezip = 'D:\\\\Download\\\\torrent\\\\completed\\\\MovieZip\\\\'\neg.globals.moviezipdir = eg.globals.moviezip+FileName+'\\\\'\neg.globals.movieproc = 'D:\\\\Download\\\\torrent\\\\completed\\\\MovieProc\\\\'\n\nSubFileTypes = ('sub','srt','txt')\nZipFileTypes = ('rar','zip','7z','r0')\nMediaFileTypes = ('mkv','avi','mp4','wmv', 'm2ts', 'iso', 'mpg', 'mpeg')\n\n\nif isFolder == True:\n    os.mkdir(eg.globals.moviezipdir)\n #   print 'I\\'m a folder!'\n    for root, dirs, files in os.walk(DownloadName):\n        for f in files:\n            if f.endswith(ZipFileTypes) or re.search(r'\\.r\\d+$', f):\n                #print 'I\\'m a zip file!'\n                shutil.copy(os.path.join(root,f),eg.globals.moviezipdir)\n            if f.endswith(SubFileTypes) or f.endswith(MediaFileTypes):\n                #print 'I\\'m a subtitle or media file!'\n                shutil.copy(os.path.join(root,f),eg.globals.movieproc)\n\nelif isFolder == False:\n    shutil.copy(DownloadName,eg.globals.movieproc)\n#   print 'I\\'m NOT a folder!'\n\nelse:\n    print 'I\\'m confused!'\n")
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            System.Execute(u'd:\\Software\\SCRU\\SCRU.exe', u'"D:\\Download\\torrent\\completed\\MovieZip" "D:\\Download\\torrent\\completed\\MovieProc"', 3, True, 2, u'', False)
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            System.Execute(u'D:\\Software\\theRenamer\\theRenamer.exe', u'-fetchmovie', 3, True, 2, u'', False)
+        </Action>
+        <Action Name="Clean whatever is left in ZIP and PROC">
+            EventGhost.PythonScript(u'import os\nimport shutil\n\nfor root, dirs, files in os.walk(eg.globals.moviezip):\n    for f in files:\n        os.remove(os.path.join(root, f))\n    for d in dirs:\n        shutil.rmtree(os.path.join(root, d))\n            \nfor root, dirs, files in os.walk(eg.globals.movieproc):\n    for f in files:\n        os.remove(os.path.join(root, f))\n    for d in dirs:\n        shutil.rmtree(os.path.join(root, d))\n       ')
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+        <Action>
+            XBMC2.UpdateVideoLibrary()
+        </Action>
+    </Macro>
+    <Folder Name="XBMC2" Enabled="False">
+        <Folder Name="Buttons">
+            <Folder Name="Remote">
+                <Macro Name="Left">
+                    <Action>
+                        XBMC2.RemoteLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="Right">
+                    <Action>
+                        XBMC2.RemoteRight()
+                    </Action>
+                </Macro>
+                <Macro Name="Up">
+                    <Action>
+                        XBMC2.RemoteUp()
+                    </Action>
+                </Macro>
+                <Macro Name="Down">
+                    <Action>
+                        XBMC2.RemoteDown()
+                    </Action>
+                </Macro>
+                <Macro Name="Select">
+                    <Action>
+                        XBMC2.RemoteSelect()
+                    </Action>
+                </Macro>
+                <Macro Name="Back">
+                    <Action>
+                        XBMC2.RemoteBack()
+                    </Action>
+                </Macro>
+                <Macro Name="Menu">
+                    <Action>
+                        XBMC2.RemoteMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="Info">
+                    <Action>
+                        XBMC2.RemoteInfo()
+                    </Action>
+                </Macro>
+                <Macro Name="Display">
+                    <Action>
+                        XBMC2.RemoteDisplay()
+                    </Action>
+                </Macro>
+                <Macro Name="Title">
+                    <Action>
+                        XBMC2.RemoteTitle()
+                    </Action>
+                </Macro>
+                <Macro Name="Play">
+                    <Action>
+                        XBMC2.RemotePlay()
+                    </Action>
+                </Macro>
+                <Macro Name="Pause">
+                    <Action>
+                        XBMC2.RemotePause()
+                    </Action>
+                </Macro>
+                <Macro Name="Reverse">
+                    <Action>
+                        XBMC2.RemoteReverse()
+                    </Action>
+                </Macro>
+                <Macro Name="Forward">
+                    <Action>
+                        XBMC2.RemoteForward()
+                    </Action>
+                </Macro>
+                <Macro Name="Skip +">
+                    <Action>
+                        XBMC2.RemoteSkipPlus()
+                    </Action>
+                </Macro>
+                <Macro Name="Skip -">
+                    <Action>
+                        XBMC2.RemoteSkipMinus()
+                    </Action>
+                </Macro>
+                <Macro Name="Stop">
+                    <Action>
+                        XBMC2.RemoteStop()
+                    </Action>
+                </Macro>
+                <Macro Name="0">
+                    <Action>
+                        XBMC2.Remote0()
+                    </Action>
+                </Macro>
+                <Macro Name="1">
+                    <Action>
+                        XBMC2.Remote1()
+                    </Action>
+                </Macro>
+                <Macro Name="2">
+                    <Action>
+                        XBMC2.Remote2()
+                    </Action>
+                </Macro>
+                <Macro Name="3">
+                    <Action>
+                        XBMC2.Remote3()
+                    </Action>
+                </Macro>
+                <Macro Name="4">
+                    <Action>
+                        XBMC2.Remote4()
+                    </Action>
+                </Macro>
+                <Macro Name="5">
+                    <Action>
+                        XBMC2.Remote5()
+                    </Action>
+                </Macro>
+                <Macro Name="6">
+                    <Action>
+                        XBMC2.Remote6()
+                    </Action>
+                </Macro>
+                <Macro Name="7">
+                    <Action>
+                        XBMC2.Remote7()
+                    </Action>
+                </Macro>
+                <Macro Name="8">
+                    <Action>
+                        XBMC2.Remote8()
+                    </Action>
+                </Macro>
+                <Macro Name="9">
+                    <Action>
+                        XBMC2.Remote9()
+                    </Action>
+                </Macro>
+                <Macro Name="Power">
+                    <Action>
+                        XBMC2.RemotePower()
+                    </Action>
+                </Macro>
+                <Macro Name="My TV">
+                    <Action>
+                        XBMC2.RemoteMyTV()
+                    </Action>
+                </Macro>
+                <Macro Name="My Music">
+                    <Action>
+                        XBMC2.RemoteMyMusic()
+                    </Action>
+                </Macro>
+                <Macro Name="My Pictures">
+                    <Action>
+                        XBMC2.RemoteMyPictures()
+                    </Action>
+                </Macro>
+                <Macro Name="My Video">
+                    <Action>
+                        XBMC2.RemoteMyVideo()
+                    </Action>
+                </Macro>
+                <Macro Name="Record">
+                    <Action>
+                        XBMC2.RemoteRecord()
+                    </Action>
+                </Macro>
+                <Macro Name="Start">
+                    <Action>
+                        XBMC2.RemoteStart()
+                    </Action>
+                </Macro>
+                <Macro Name="Vol +">
+                    <Action>
+                        XBMC2.RemoteVolPlus()
+                    </Action>
+                </Macro>
+                <Macro Name="Vol -">
+                    <Action>
+                        XBMC2.RemoteVolMinus()
+                    </Action>
+                </Macro>
+                <Macro Name="CH +">
+                    <Action>
+                        XBMC2.Remotechannelplus()
+                    </Action>
+                </Macro>
+                <Macro Name="CH -">
+                    <Action>
+                        XBMC2.Remotechannelminus()
+                    </Action>
+                </Macro>
+                <Macro Name="PG +">
+                    <Action>
+                        XBMC2.Remotepageplus()
+                    </Action>
+                </Macro>
+                <Macro Name="PG -">
+                    <Action>
+                        XBMC2.Remotepageminus()
+                    </Action>
+                </Macro>
+                <Macro Name="Mute">
+                    <Action>
+                        XBMC2.RemoteMute()
+                    </Action>
+                </Macro>
+                <Macro Name="Recorded TV">
+                    <Action>
+                        XBMC2.RemoteRecordedTV()
+                    </Action>
+                </Macro>
+                <Macro Name="Live TV">
+                    <Action>
+                        XBMC2.RemoteLiveTV()
+                    </Action>
+                </Macro>
+                <Macro Name="*">
+                    <Action>
+                        XBMC2.RemoteStar()
+                    </Action>
+                </Macro>
+                <Macro Name="#">
+                    <Action>
+                        XBMC2.Remote#()
+                    </Action>
+                </Macro>
+                <Macro Name="Clear">
+                    <Action>
+                        XBMC2.RemoteClear()
+                    </Action>
+                </Macro>
+                <Macro Name="Guide">
+                    <Action>
+                        XBMC2.Remoteguide()
+                    </Action>
+                </Macro>
+                <Macro Name="Enter">
+                    <Action>
+                        XBMC2.Remoteenter()
+                    </Action>
+                </Macro>
+                <Macro Name="Xbox">
+                    <Action>
+                        XBMC2.Remotexbox()
+                    </Action>
+                </Macro>
+                <Macro Name="Teletext">
+                    <Action>
+                        XBMC2.Remoteteletext()
+                    </Action>
+                </Macro>
+                <Macro Name="Red">
+                    <Action>
+                        XBMC2.Remotered()
+                    </Action>
+                </Macro>
+                <Macro Name="Green">
+                    <Action>
+                        XBMC2.Remotegreen()
+                    </Action>
+                </Macro>
+                <Macro Name="Yellow">
+                    <Action>
+                        XBMC2.Remoteyellow()
+                    </Action>
+                </Macro>
+                <Macro Name="Blue">
+                    <Action>
+                        XBMC2.Remoteblue()
+                    </Action>
+                </Macro>
+                <Macro Name="Subtitle">
+                    <Action>
+                        XBMC2.Remotesubtitle()
+                    </Action>
+                </Macro>
+                <Macro Name="Language">
+                    <Action>
+                        XBMC2.Remotelanguage()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Gamepad">
+                <Macro Name="A">
+                    <Action>
+                        XBMC2.GamepadA()
+                    </Action>
+                </Macro>
+                <Macro Name="B">
+                    <Action>
+                        XBMC2.GamepadB()
+                    </Action>
+                </Macro>
+                <Macro Name="X">
+                    <Action>
+                        XBMC2.GamepadX()
+                    </Action>
+                </Macro>
+                <Macro Name="Y">
+                    <Action>
+                        XBMC2.GamepadY()
+                    </Action>
+                </Macro>
+                <Macro Name="White">
+                    <Action>
+                        XBMC2.GamepadWhite()
+                    </Action>
+                </Macro>
+                <Macro Name="Black">
+                    <Action>
+                        XBMC2.GamepadBlack()
+                    </Action>
+                </Macro>
+                <Macro Name="Start">
+                    <Action>
+                        XBMC2.GamepadStart()
+                    </Action>
+                </Macro>
+                <Macro Name="Back">
+                    <Action>
+                        XBMC2.GamepadBack()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbButton">
+                    <Action>
+                        XBMC2.GamepadLeftThumbButton()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbButton">
+                    <Action>
+                        XBMC2.GamepadRightThumbButton()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbStick">
+                    <Action>
+                        XBMC2.GamepadLeftThumbStick()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbStickUp">
+                    <Action>
+                        XBMC2.GamepadLeftThumbStickUp()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbStickDown">
+                    <Action>
+                        XBMC2.GamepadLeftThumbStickDown()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbStickLeft">
+                    <Action>
+                        XBMC2.GamepadLeftThumbStickLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftThumbStickRight">
+                    <Action>
+                        XBMC2.GamepadLeftThumbStickRight()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbStick">
+                    <Action>
+                        XBMC2.GamepadRightThumbStick()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbStickUp">
+                    <Action>
+                        XBMC2.GamepadRightThumbStickUp()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbStickDown">
+                    <Action>
+                        XBMC2.GamepadRightThumbStickDown()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbStickLeft">
+                    <Action>
+                        XBMC2.GamepadRightThumbStickLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="RightThumbStickRight">
+                    <Action>
+                        XBMC2.GamepadRightThumbStickRight()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftTrigger">
+                    <Action>
+                        XBMC2.GamepadLeftTrigger()
+                    </Action>
+                </Macro>
+                <Macro Name="RightTrigger">
+                    <Action>
+                        XBMC2.GamepadRightTrigger()
+                    </Action>
+                </Macro>
+                <Macro Name="LeftAnalogTrigger">
+                    <Action>
+                        XBMC2.GamepadLeftAnalogTrigger()
+                    </Action>
+                </Macro>
+                <Macro Name="RightAnalogTrigger">
+                    <Action>
+                        XBMC2.GamepadRightAnalogTrigger()
+                    </Action>
+                </Macro>
+                <Macro Name="DpadLeft">
+                    <Action>
+                        XBMC2.GamepadDpadLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="DpadRight">
+                    <Action>
+                        XBMC2.GamepadDpadRight()
+                    </Action>
+                </Macro>
+                <Macro Name="DpadUp">
+                    <Action>
+                        XBMC2.GamepadDpadUp()
+                    </Action>
+                </Macro>
+                <Macro Name="DpadDown">
+                    <Action>
+                        XBMC2.GamepadDpadDown()
+                    </Action>
+                </Macro>
+            </Folder>
+        </Folder>
+        <Folder Name="Actions">
+            <Folder Name="General">
+                <Macro Name="Left">
+                    <Action>
+                        XBMC2.Left()
+                    </Action>
+                </Macro>
+                <Macro Name="Right">
+                    <Action>
+                        XBMC2.Right()
+                    </Action>
+                </Macro>
+                <Macro Name="Up">
+                    <Action>
+                        XBMC2.Up()
+                    </Action>
+                </Macro>
+                <Macro Name="Down">
+                    <Action>
+                        XBMC2.Down()
+                    </Action>
+                </Macro>
+                <Macro Name="PageUp">
+                    <Action>
+                        XBMC2.PageUp()
+                    </Action>
+                </Macro>
+                <Macro Name="PageDown">
+                    <Action>
+                        XBMC2.PageDown()
+                    </Action>
+                </Macro>
+                <Macro Name="Select">
+                    <Action>
+                        XBMC2.Select()
+                    </Action>
+                </Macro>
+                <Macro Name="Highlight">
+                    <Action>
+                        XBMC2.Highlight()
+                    </Action>
+                </Macro>
+                <Macro Name="Parentfolder">
+                    <Action>
+                        XBMC2.Parentfolder()
+                    </Action>
+                </Macro>
+                <Macro Name="Back">
+                    <Action>
+                        XBMC2.Back()
+                    </Action>
+                </Macro>
+                <Macro Name="ParentDir">
+                    <Action>
+                        XBMC2.ParentDir()
+                    </Action>
+                </Macro>
+                <Macro Name="PreviousMenu">
+                    <Action>
+                        XBMC2.PreviousMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="Info">
+                    <Action>
+                        XBMC2.Info()
+                    </Action>
+                </Macro>
+                <Macro Name="Screenshot">
+                    <Action>
+                        XBMC2.Screenshot()
+                    </Action>
+                </Macro>
+                <Macro Name="PowerOff">
+                    <Action>
+                        XBMC2.PowerOff()
+                    </Action>
+                </Macro>
+                <Macro Name="VolumeUp">
+                    <Action>
+                        XBMC2.VolumeUp()
+                    </Action>
+                </Macro>
+                <Macro Name="VolumeDown">
+                    <Action>
+                        XBMC2.VolumeDown()
+                    </Action>
+                </Macro>
+                <Macro Name="Mute">
+                    <Action>
+                        XBMC2.Mute()
+                    </Action>
+                </Macro>
+                <Macro Name="ContextMenu">
+                    <Action>
+                        XBMC2.ContextMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="ScrollUp">
+                    <Action>
+                        XBMC2.ScrollUp()
+                    </Action>
+                </Macro>
+                <Macro Name="ScrollDown">
+                    <Action>
+                        XBMC2.ScrollDown()
+                    </Action>
+                </Macro>
+                <Macro Name="Close">
+                    <Action>
+                        XBMC2.Close()
+                    </Action>
+                </Macro>
+                <Macro Name="Number0">
+                    <Action>
+                        XBMC2.Number0()
+                    </Action>
+                </Macro>
+                <Macro Name="Number1">
+                    <Action>
+                        XBMC2.Number1()
+                    </Action>
+                </Macro>
+                <Macro Name="Number2">
+                    <Action>
+                        XBMC2.Number2()
+                    </Action>
+                </Macro>
+                <Macro Name="Number3">
+                    <Action>
+                        XBMC2.Number3()
+                    </Action>
+                </Macro>
+                <Macro Name="Number4">
+                    <Action>
+                        XBMC2.Number4()
+                    </Action>
+                </Macro>
+                <Macro Name="Number5">
+                    <Action>
+                        XBMC2.Number5()
+                    </Action>
+                </Macro>
+                <Macro Name="Number6">
+                    <Action>
+                        XBMC2.Number6()
+                    </Action>
+                </Macro>
+                <Macro Name="Number7">
+                    <Action>
+                        XBMC2.Number7()
+                    </Action>
+                </Macro>
+                <Macro Name="Number8">
+                    <Action>
+                        XBMC2.Number8()
+                    </Action>
+                </Macro>
+                <Macro Name="Number9">
+                    <Action>
+                        XBMC2.Number9()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Media playing">
+                <Macro Name="Play">
+                    <Action>
+                        XBMC2.Play()
+                    </Action>
+                </Macro>
+                <Macro Name="Pause">
+                    <Action>
+                        XBMC2.Pause()
+                    </Action>
+                </Macro>
+                <Macro Name="Stop">
+                    <Action>
+                        XBMC2.Stop()
+                    </Action>
+                </Macro>
+                <Macro Name="FastForward">
+                    <Action>
+                        XBMC2.FastForward()
+                    </Action>
+                </Macro>
+                <Macro Name="Rewind">
+                    <Action>
+                        XBMC2.Rewind()
+                    </Action>
+                </Macro>
+                <Macro Name="SkipNext">
+                    <Action>
+                        XBMC2.SkipNext()
+                    </Action>
+                </Macro>
+                <Macro Name="SkipPrevious">
+                    <Action>
+                        XBMC2.SkipPrevious()
+                    </Action>
+                </Macro>
+                <Macro Name="FullScreen">
+                    <Action>
+                        XBMC2.FullScreen()
+                    </Action>
+                </Macro>
+                <Macro Name="CodecInfo">
+                    <Action>
+                        XBMC2.CodecInfo()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogSeekForward">
+                    <Action>
+                        XBMC2.AnalogSeekForward()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogSeekBack">
+                    <Action>
+                        XBMC2.AnalogSeekBack()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogFastForward">
+                    <Action>
+                        XBMC2.AnalogFastForward()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogRewind">
+                    <Action>
+                        XBMC2.AnalogRewind()
+                    </Action>
+                </Macro>
+                <Macro Name="Party Mode">
+                    <Action>
+                        XBMC2.PartyMode()
+                    </Action>
+                </Macro>
+                <Macro Name="Random">
+                    <Action>
+                        XBMC2.Random()
+                    </Action>
+                </Macro>
+                <Macro Name="Repeat">
+                    <Action>
+                        XBMC2.Repeat()
+                    </Action>
+                </Macro>
+                <Macro Name="Update Video Library">
+                    <Action>
+                        XBMC2.UpdateVideoLibrary()
+                    </Action>
+                </Macro>
+                <Macro Name="Update Music Library">
+                    <Action>
+                        XBMC2.UpdateMusicLibrary()
+                    </Action>
+                </Macro>
+                <Macro Name="IncreaseRating">
+                    <Action>
+                        XBMC2.IncreaseRating()
+                    </Action>
+                </Macro>
+                <Macro Name="DecreaseRating">
+                    <Action>
+                        XBMC2.DecreaseRating()
+                    </Action>
+                </Macro>
+                <Macro Name="EjectTray">
+                    <Action>
+                        XBMC2.EjectTray()
+                    </Action>
+                </Macro>
+                <Macro Name="Record">
+                    <Action>
+                        XBMC2.Record()
+                    </Action>
+                </Macro>
+                <Macro Name="PlayDVD">
+                    <Action>
+                        XBMC2.PlayDVD()
+                    </Action>
+                </Macro>
+                <Macro Name="LastFM.Love">
+                    <Action>
+                        XBMC2.LastFMLove()
+                    </Action>
+                </Macro>
+                <Macro Name="LastFM.Ban">
+                    <Action>
+                        XBMC2.LastFMBan()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Playlist">
+                <Macro Name="Playlist">
+                    <Action>
+                        XBMC2.Playlist()
+                    </Action>
+                </Macro>
+                <Macro Name="Queue">
+                    <Action>
+                        XBMC2.Queue()
+                    </Action>
+                </Macro>
+                <Macro Name="MoveItemUp">
+                    <Action>
+                        XBMC2.MoveItemUp()
+                    </Action>
+                </Macro>
+                <Macro Name="MoveItemDown">
+                    <Action>
+                        XBMC2.MoveItemDown()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="FullScreen Video">
+                <Macro Name="StepForward">
+                    <Action>
+                        XBMC2.StepForward()
+                    </Action>
+                </Macro>
+                <Macro Name="StepBack">
+                    <Action>
+                        XBMC2.StepBack()
+                    </Action>
+                </Macro>
+                <Macro Name="BigStepForward">
+                    <Action>
+                        XBMC2.BigStepForward()
+                    </Action>
+                </Macro>
+                <Macro Name="BigStepBack">
+                    <Action>
+                        XBMC2.BigStepBack()
+                    </Action>
+                </Macro>
+                <Macro Name="SmallStepBack">
+                    <Action>
+                        XBMC2.SmallStepBack()
+                    </Action>
+                </Macro>
+                <Macro Name="OSD">
+                    <Action>
+                        XBMC2.OSD()
+                    </Action>
+                </Macro>
+                <Macro Name="AspectRatio">
+                    <Action>
+                        XBMC2.AspectRatio()
+                    </Action>
+                </Macro>
+                <Macro Name="ShowSubtitles">
+                    <Action>
+                        XBMC2.ShowSubtitles()
+                    </Action>
+                </Macro>
+                <Macro Name="NextSubtitle">
+                    <Action>
+                        XBMC2.NextSubtitle()
+                    </Action>
+                </Macro>
+                <Macro Name="SubtitleDelay">
+                    <Action>
+                        XBMC2.Subtitledelay()
+                    </Action>
+                </Macro>
+                <Macro Name="SubtitleDelayMinus">
+                    <Action>
+                        XBMC2.SubtitleDelayMinus()
+                    </Action>
+                </Macro>
+                <Macro Name="SubtitleDelayPlus">
+                    <Action>
+                        XBMC2.SubtitleDelayPlus()
+                    </Action>
+                </Macro>
+                <Macro Name="AudioDelay">
+                    <Action>
+                        XBMC2.Audiodelay()
+                    </Action>
+                </Macro>
+                <Macro Name="AudioDelayMinus">
+                    <Action>
+                        XBMC2.AudioDelayMinus()
+                    </Action>
+                </Macro>
+                <Macro Name="AudioDelayPlus">
+                    <Action>
+                        XBMC2.AudioDelayPlus()
+                    </Action>
+                </Macro>
+                <Macro Name="AudioNextLanguage">
+                    <Action>
+                        XBMC2.AudioNextLanguage()
+                    </Action>
+                </Macro>
+                <Macro Name="MplayerOSD">
+                    <Action>
+                        XBMC2.mplayerosd()
+                    </Action>
+                </Macro>
+                <Macro Name="ShowTime">
+                    <Action>
+                        XBMC2.ShowTime()
+                    </Action>
+                </Macro>
+                <Macro Name="ShowVideoMenu">
+                    <Action>
+                        XBMC2.ShowVideoMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="IncreasePAR">
+                    <Action>
+                        XBMC2.Increasepar()
+                    </Action>
+                </Macro>
+                <Macro Name="DecreasePAR">
+                    <Action>
+                        XBMC2.Decreasepar()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Picture slideshow">
+                <Macro Name="NextPicture">
+                    <Action>
+                        XBMC2.NextPicture()
+                    </Action>
+                </Macro>
+                <Macro Name="PreviousPicture">
+                    <Action>
+                        XBMC2.PreviousPicture()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomOut">
+                    <Action>
+                        XBMC2.ZoomOut()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomIn">
+                    <Action>
+                        XBMC2.ZoomIn()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomNormal">
+                    <Action>
+                        XBMC2.ZoomNormal()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel1">
+                    <Action>
+                        XBMC2.ZoomLevel1()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel2">
+                    <Action>
+                        XBMC2.ZoomLevel2()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel3">
+                    <Action>
+                        XBMC2.ZoomLevel3()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel4">
+                    <Action>
+                        XBMC2.ZoomLevel4()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel5">
+                    <Action>
+                        XBMC2.ZoomLevel5()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel6">
+                    <Action>
+                        XBMC2.ZoomLevel6()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel7">
+                    <Action>
+                        XBMC2.ZoomLevel7()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel8">
+                    <Action>
+                        XBMC2.ZoomLevel8()
+                    </Action>
+                </Macro>
+                <Macro Name="ZoomLevel9">
+                    <Action>
+                        XBMC2.ZoomLevel9()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogMove">
+                    <Action>
+                        XBMC2.AnalogMove()
+                    </Action>
+                </Macro>
+                <Macro Name="Rotate">
+                    <Action>
+                        XBMC2.Rotate()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Screen calibration">
+                <Macro Name="NextCalibration">
+                    <Action>
+                        XBMC2.NextCalibration()
+                    </Action>
+                </Macro>
+                <Macro Name="ResetCalibration">
+                    <Action>
+                        XBMC2.ResetCalibration()
+                    </Action>
+                </Macro>
+                <Macro Name="AnalogMove">
+                    <Action>
+                        XBMC2.AnalogMove()
+                    </Action>
+                </Macro>
+                <Macro Name="NextResolution">
+                    <Action>
+                        XBMC2.NextResolution()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="File Manager">
+                <Macro Name="Delete">
+                    <Action>
+                        XBMC2.Delete()
+                    </Action>
+                </Macro>
+                <Macro Name="Copy">
+                    <Action>
+                        XBMC2.Copy()
+                    </Action>
+                </Macro>
+                <Macro Name="Move">
+                    <Action>
+                        XBMC2.Move()
+                    </Action>
+                </Macro>
+                <Macro Name="Rename">
+                    <Action>
+                        XBMC2.Rename()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="On-screen keyboard">
+                <Macro Name="BackSpace">
+                    <Action>
+                        XBMC2.BackSpace()
+                    </Action>
+                </Macro>
+                <Macro Name="Shift">
+                    <Action>
+                        XBMC2.Shift()
+                    </Action>
+                </Macro>
+                <Macro Name="Symbols">
+                    <Action>
+                        XBMC2.Symbols()
+                    </Action>
+                </Macro>
+                <Macro Name="CursorLeft">
+                    <Action>
+                        XBMC2.CursorLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="CursorRight">
+                    <Action>
+                        XBMC2.CursorRight()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Music visualisation">
+                <Macro Name="OSD">
+                    <Action>
+                        XBMC2.OSD()
+                    </Action>
+                </Macro>
+                <Macro Name="ShowPreset">
+                    <Action>
+                        XBMC2.ShowPreset()
+                    </Action>
+                </Macro>
+                <Macro Name="PresetList">
+                    <Action>
+                        XBMC2.PresetList()
+                    </Action>
+                </Macro>
+                <Macro Name="NextPreset">
+                    <Action>
+                        XBMC2.NextPreset()
+                    </Action>
+                </Macro>
+                <Macro Name="PreviousPreset">
+                    <Action>
+                        XBMC2.PreviousPreset()
+                    </Action>
+                </Macro>
+                <Macro Name="LockPreset">
+                    <Action>
+                        XBMC2.LockPreset()
+                    </Action>
+                </Macro>
+                <Macro Name="RandomPreset">
+                    <Action>
+                        XBMC2.RandomPreset()
+                    </Action>
+                </Macro>
+                <Macro Name="IncreaseVisRating">
+                    <Action>
+                        XBMC2.increasevisrating()
+                    </Action>
+                </Macro>
+                <Macro Name="DecreaseVisRating">
+                    <Action>
+                        XBMC2.decreasevisrating()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Shutdown related">
+                <Macro Name="Quit">
+                    <Action>
+                        XBMC2.Quit()
+                    </Action>
+                </Macro>
+                <Macro Name="RestartApp">
+                    <Action>
+                        XBMC2.RestartApp()
+                    </Action>
+                </Macro>
+                <Macro Name="Reset Computer">
+                    <Action>
+                        XBMC2.Reset()
+                    </Action>
+                </Macro>
+                <Macro Name="Shutdown Computer">
+                    <Action>
+                        XBMC2.Shutdown()
+                    </Action>
+                </Macro>
+                <Macro Name="Powerdown">
+                    <Action>
+                        XBMC2.Powerdown()
+                    </Action>
+                </Macro>
+                <Macro Name="Suspend">
+                    <Action>
+                        XBMC2.Suspend()
+                    </Action>
+                </Macro>
+                <Macro Name="Hibernate">
+                    <Action>
+                        XBMC2.Hibernate()
+                    </Action>
+                </Macro>
+                <Macro Name="Reboot Computer">
+                    <Action>
+                        XBMC2.Reboot()
+                    </Action>
+                </Macro>
+                <Macro Name="Restart Computer">
+                    <Action>
+                        XBMC2.Restart()
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Uncategorized actions">
+                <Macro Name="JumpSMS2">
+                    <Action>
+                        XBMC2.JumpSMS2()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS3">
+                    <Action>
+                        XBMC2.JumpSMS3()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS4">
+                    <Action>
+                        XBMC2.JumpSMS4()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS5">
+                    <Action>
+                        XBMC2.JumpSMS5()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS6">
+                    <Action>
+                        XBMC2.JumpSMS6()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS7">
+                    <Action>
+                        XBMC2.JumpSMS7()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS8">
+                    <Action>
+                        XBMC2.JumpSMS8()
+                    </Action>
+                </Macro>
+                <Macro Name="JumpSMS9">
+                    <Action>
+                        XBMC2.JumpSMS9()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterClear">
+                    <Action>
+                        XBMC2.FilterClear()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS2">
+                    <Action>
+                        XBMC2.FilterSMS2()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS3">
+                    <Action>
+                        XBMC2.FilterSMS3()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS4">
+                    <Action>
+                        XBMC2.FilterSMS4()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS5">
+                    <Action>
+                        XBMC2.FilterSMS5()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS6">
+                    <Action>
+                        XBMC2.FilterSMS6()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS7">
+                    <Action>
+                        XBMC2.FilterSMS7()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS8">
+                    <Action>
+                        XBMC2.FilterSMS8()
+                    </Action>
+                </Macro>
+                <Macro Name="FilterSMS9">
+                    <Action>
+                        XBMC2.FilterSMS9()
+                    </Action>
+                </Macro>
+                <Macro Name="FirstPage">
+                    <Action>
+                        XBMC2.FirstPage()
+                    </Action>
+                </Macro>
+                <Macro Name="LastPage">
+                    <Action>
+                        XBMC2.LastPage()
+                    </Action>
+                </Macro>
+                <Macro Name="HideSubMenu">
+                    <Action>
+                        XBMC2.HideSubMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="ToggleSource">
+                    <Action>
+                        XBMC2.ToggleSource()
+                    </Action>
+                </Macro>
+                <Macro Name="Remove">
+                    <Action>
+                        XBMC2.Remove()
+                    </Action>
+                </Macro>
+                <Macro Name="AudioToggleDigital">
+                    <Action>
+                        XBMC2.AudioToggleDigital()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDLeft">
+                    <Action>
+                        XBMC2.OSDLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDRight">
+                    <Action>
+                        XBMC2.OSDRight()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDUp">
+                    <Action>
+                        XBMC2.OSDUp()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDDown">
+                    <Action>
+                        XBMC2.OSDDown()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDSelect">
+                    <Action>
+                        XBMC2.OSDSelect()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDValuePlus">
+                    <Action>
+                        XBMC2.OSDValuePlus()
+                    </Action>
+                </Macro>
+                <Macro Name="OSDValueMinus">
+                    <Action>
+                        XBMC2.OSDValueMinus()
+                    </Action>
+                </Macro>
+                <Macro Name="ToggleWatched">
+                    <Action>
+                        XBMC2.ToggleWatched()
+                    </Action>
+                </Macro>
+                <Macro Name="ScanItem">
+                    <Action>
+                        XBMC2.ScanItem()
+                    </Action>
+                </Macro>
+                <Macro Name="Enter">
+                    <Action>
+                        XBMC2.Enter()
+                    </Action>
+                </Macro>
+                <Macro Name="IncreaseRating">
+                    <Action>
+                        XBMC2.IncreaseRating()
+                    </Action>
+                </Macro>
+                <Macro Name="DecreaseRating">
+                    <Action>
+                        XBMC2.DecreaseRating()
+                    </Action>
+                </Macro>
+                <Macro Name="ToggleFullScreen">
+                    <Action>
+                        XBMC2.ToggleFullScreen()
+                    </Action>
+                </Macro>
+                <Macro Name="NextScene">
+                    <Action>
+                        XBMC2.NextScene()
+                    </Action>
+                </Macro>
+                <Macro Name="PreviousScene">
+                    <Action>
+                        XBMC2.PreviousScene()
+                    </Action>
+                </Macro>
+                <Macro Name="NextLetter">
+                    <Action>
+                        XBMC2.NextLetter()
+                    </Action>
+                </Macro>
+                <Macro Name="PrevLetter">
+                    <Action>
+                        XBMC2.PrevLetter()
+                    </Action>
+                </Macro>
+                <Macro Name="VerticalShiftUp">
+                    <Action>
+                        XBMC2.Verticalshiftup()
+                    </Action>
+                </Macro>
+                <Macro Name="VerticalShiftDown">
+                    <Action>
+                        XBMC2.Verticalshiftdown()
+                    </Action>
+                </Macro>
+                <Macro Name="PlayPause">
+                    <Action>
+                        XBMC2.Playpause()
+                    </Action>
+                </Macro>
+                <Macro Name="ReloadKeymaps">
+                    <Action>
+                        XBMC2.Reloadkeymaps()
+                    </Action>
+                </Macro>
+                <Macro Name="GuiProfile">
+                    <Action>
+                        XBMC2.Guiprofile()
+                    </Action>
+                </Macro>
+                <Macro Name="Red">
+                    <Action>
+                        XBMC2.Red()
+                    </Action>
+                </Macro>
+                <Macro Name="Green">
+                    <Action>
+                        XBMC2.Green()
+                    </Action>
+                </Macro>
+                <Macro Name="Yellow">
+                    <Action>
+                        XBMC2.Yellow()
+                    </Action>
+                </Macro>
+                <Macro Name="Blue">
+                    <Action>
+                        XBMC2.Blue()
+                    </Action>
+                </Macro>
+                <Macro Name="Subtitleshiftup">
+                    <Action>
+                        XBMC2.Subtitleshiftup()
+                    </Action>
+                </Macro>
+                <Macro Name="Subtitleshiftdown">
+                    <Action>
+                        XBMC2.Subtitleshiftdown()
+                    </Action>
+                </Macro>
+                <Macro Name="Subtitlealign">
+                    <Action>
+                        XBMC2.Subtitlealign()
+                    </Action>
+                </Macro>
+                <Macro Name="Help">
+                    <Action>
+                        XBMC2.Help()
+                    </Action>
+                </Macro>
+                <Macro Name="Minimize">
+                    <Action>
+                        XBMC2.Minimize()
+                    </Action>
+                </Macro>
+                <Macro Name="Mastermode">
+                    <Action>
+                        XBMC2.Mastermode()
+                    </Action>
+                </Macro>
+                <Macro Name="TakeScreenshot">
+                    <Action>
+                        XBMC2.TakeScreenshot()
+                    </Action>
+                </Macro>
+                <Macro Name="ReloadSkin">
+                    <Action>
+                        XBMC2.ReloadSkin()
+                    </Action>
+                </Macro>
+                <Macro Name="UnloadSkin">
+                    <Action>
+                        XBMC2.UnloadSkin()
+                    </Action>
+                </Macro>
+                <Macro Name="RefreshRSS">
+                    <Action>
+                        XBMC2.RefreshRSS()
+                    </Action>
+                </Macro>
+                <Macro Name="Playlist.Clear">
+                    <Action>
+                        XBMC2.Playlist.Clear()
+                    </Action>
+                </Macro>
+                <Macro Name="RipCD">
+                    <Action>
+                        XBMC2.RipCD()
+                    </Action>
+                </Macro>
+                <Macro Name="Skin.ResetSettings">
+                    <Action>
+                        XBMC2.Skin.ResetSettings()
+                    </Action>
+                </Macro>
+                <Macro Name="System.LogOff">
+                    <Action>
+                        XBMC2.System.LogOff()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.Refresh">
+                    <Action>
+                        XBMC2.Container.Refresh()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.Update">
+                    <Action>
+                        XBMC2.Container.Update()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.NextViewMode">
+                    <Action>
+                        XBMC2.Container.NextViewMode()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.PreviousViewMode">
+                    <Action>
+                        XBMC2.Container.PreviousViewMode()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.NextSortMethod">
+                    <Action>
+                        XBMC2.Container.NextSortMethod()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.PreviousSortMethod">
+                    <Action>
+                        XBMC2.Container.PreviousSortMethod()
+                    </Action>
+                </Macro>
+                <Macro Name="Container.SortDirection">
+                    <Action>
+                        XBMC2.Container.SortDirection()
+                    </Action>
+                </Macro>
+                <Macro Name="UpdateAddonRepos">
+                    <Action>
+                        XBMC2.UpdateAddonRepos()
+                    </Action>
+                </Macro>
+                <Macro Name="UpdateLocalAddons">
+                    <Action>
+                        XBMC2.UpdateLocalAddons()
+                    </Action>
+                </Macro>
+                <Macro Name="ToggleDPMS">
+                    <Action>
+                        XBMC2.ToggleDPMS()
+                    </Action>
+                </Macro>
+                <Macro Name="Weather.Refresh">
+                    <Action>
+                        XBMC2.Weather.Refresh()
+                    </Action>
+                </Macro>
+                <Macro Name="Weather.LocationNext">
+                    <Action>
+                        XBMC2.Weather.LocationNext()
+                    </Action>
+                </Macro>
+                <Macro Name="Weather.LocationPrevious">
+                    <Action>
+                        XBMC2.Weather.LocationPrevious()
+                    </Action>
+                </Macro>
+                <Macro Name="LIRC.Stop">
+                    <Action>
+                        XBMC2.LIRC.Stop()
+                    </Action>
+                </Macro>
+                <Macro Name="LIRC.Start">
+                    <Action>
+                        XBMC2.LIRC.Start()
+                    </Action>
+                </Macro>
+                <Macro Name="LCD.Suspend">
+                    <Action>
+                        XBMC2.LCD.Suspend()
+                    </Action>
+                </Macro>
+                <Macro Name="LCD.Resume" Expanded="True">
+                    <Action>
+                        XBMC2.LCD.Resume()
+                    </Action>
+                </Macro>
+            </Folder>
+        </Folder>
+        <Folder Name="Windows">
+            <Macro Name="Show Movies Screen">
+                <Action>
+                    XBMC2.MyMovies()
+                </Action>
+            </Macro>
+            <Macro Name="Show TV Shows Screen">
+                <Action>
+                    XBMC2.MyTVShows()
+                </Action>
+            </Macro>
+            <Macro Name="Show Shutdown Menu">
+                <Action>
+                    XBMC2.ShutdownMenu()
+                </Action>
+            </Macro>
+            <Macro Name="Home">
+                <Action>
+                    XBMC2.Home()
+                </Action>
+            </Macro>
+            <Macro Name="Programs">
+                <Action>
+                    XBMC2.Programs()
+                </Action>
+            </Macro>
+            <Macro Name="Pictures">
+                <Action>
+                    XBMC2.Pictures()
+                </Action>
+            </Macro>
+            <Macro Name="Files">
+                <Action>
+                    XBMC2.Files()
+                </Action>
+            </Macro>
+            <Macro Name="Settings">
+                <Action>
+                    XBMC2.Settings()
+                </Action>
+            </Macro>
+            <Macro Name="Music">
+                <Action>
+                    XBMC2.Music()
+                </Action>
+            </Macro>
+            <Macro Name="Musicfiles">
+                <Action>
+                    XBMC2.Musicfiles()
+                </Action>
+            </Macro>
+            <Macro Name="Musiclibrary">
+                <Action>
+                    XBMC2.Musiclibrary()
+                </Action>
+            </Macro>
+            <Macro Name="Musicplaylist">
+                <Action>
+                    XBMC2.Musicplaylist()
+                </Action>
+            </Macro>
+            <Macro Name="Musicplaylisteditor">
+                <Action>
+                    XBMC2.Musicplaylisteditor()
+                </Action>
+            </Macro>
+            <Macro Name="Musicinformation">
+                <Action>
+                    XBMC2.Musicinformation()
+                </Action>
+            </Macro>
+            <Macro Name="Video">
+                <Action>
+                    XBMC2.Video()
+                </Action>
+            </Macro>
+            <Macro Name="Videofiles">
+                <Action>
+                    XBMC2.Videofiles()
+                </Action>
+            </Macro>
+            <Macro Name="Videolibrary">
+                <Action>
+                    XBMC2.Videolibrary()
+                </Action>
+            </Macro>
+            <Macro Name="Videoplaylist">
+                <Action>
+                    XBMC2.Videoplaylist()
+                </Action>
+            </Macro>
+            <Macro Name="Systeminfo">
+                <Action>
+                    XBMC2.Systeminfo()
+                </Action>
+            </Macro>
+            <Macro Name="Guicalibration">
+                <Action>
+                    XBMC2.Guicalibration()
+                </Action>
+            </Macro>
+            <Macro Name="Screencalibration">
+                <Action>
+                    XBMC2.Screencalibration()
+                </Action>
+            </Macro>
+            <Macro Name="Picturessettings">
+                <Action>
+                    XBMC2.Picturessettings()
+                </Action>
+            </Macro>
+            <Macro Name="Programssettings">
+                <Action>
+                    XBMC2.Programssettings()
+                </Action>
+            </Macro>
+            <Macro Name="Weathersettings">
+                <Action>
+                    XBMC2.Weathersettings()
+                </Action>
+            </Macro>
+            <Macro Name="Musicsettings">
+                <Action>
+                    XBMC2.Musicsettings()
+                </Action>
+            </Macro>
+            <Macro Name="Systemsettings">
+                <Action>
+                    XBMC2.Systemsettings()
+                </Action>
+            </Macro>
+            <Macro Name="Videossettings">
+                <Action>
+                    XBMC2.Videossettings()
+                </Action>
+            </Macro>
+            <Macro Name="Networksettings">
+                <Action>
+                    XBMC2.Networksettings()
+                </Action>
+            </Macro>
+            <Macro Name="Appearancesettings">
+                <Action>
+                    XBMC2.Appearancesettings()
+                </Action>
+            </Macro>
+            <Macro Name="Scripts">
+                <Action>
+                    XBMC2.Scripts()
+                </Action>
+            </Macro>
+            <Macro Name="Gamesaves">
+                <Action>
+                    XBMC2.Gamesaves()
+                </Action>
+            </Macro>
+            <Macro Name="Profiles">
+                <Action>
+                    XBMC2.Profiles()
+                </Action>
+            </Macro>
+            <Macro Name="Virtualkeyboard">
+                <Action>
+                    XBMC2.Virtualkeyboard()
+                </Action>
+            </Macro>
+            <Macro Name="Volumebar">
+                <Action>
+                    XBMC2.Volumebar()
+                </Action>
+            </Macro>
+            <Macro Name="Favourites">
+                <Action>
+                    XBMC2.Favourites()
+                </Action>
+            </Macro>
+            <Macro Name="Musicosd">
+                <Action>
+                    XBMC2.Musicosd()
+                </Action>
+            </Macro>
+            <Macro Name="Visualisationsettings">
+                <Action>
+                    XBMC2.Visualisationsettings()
+                </Action>
+            </Macro>
+            <Macro Name="Visualisationpresetlist">
+                <Action>
+                    XBMC2.Visualisationpresetlist()
+                </Action>
+            </Macro>
+            <Macro Name="Osdvideosettings">
+                <Action>
+                    XBMC2.Osdvideosettings()
+                </Action>
+            </Macro>
+            <Macro Name="Osdaudiosettings">
+                <Action>
+                    XBMC2.Osdaudiosettings()
+                </Action>
+            </Macro>
+            <Macro Name="Videobookmarks">
+                <Action>
+                    XBMC2.Videobookmarks()
+                </Action>
+            </Macro>
+            <Macro Name="Profilesettings">
+                <Action>
+                    XBMC2.Profilesettings()
+                </Action>
+            </Macro>
+            <Macro Name="Locksettings">
+                <Action>
+                    XBMC2.Locksettings()
+                </Action>
+            </Macro>
+            <Macro Name="Contentsettings">
+                <Action>
+                    XBMC2.Contentsettings()
+                </Action>
+            </Macro>
+            <Macro Name="Networksetup">
+                <Action>
+                    XBMC2.Networksetup()
+                </Action>
+            </Macro>
+            <Macro Name="Smartplaylisteditor">
+                <Action>
+                    XBMC2.Smartplaylisteditor()
+                </Action>
+            </Macro>
+            <Macro Name="Smartplaylistrule">
+                <Action>
+                    XBMC2.Smartplaylistrule()
+                </Action>
+            </Macro>
+            <Macro Name="Movieinformation">
+                <Action>
+                    XBMC2.Movieinformation()
+                </Action>
+            </Macro>
+            <Macro Name="Scriptsdebuginfo">
+                <Action>
+                    XBMC2.Scriptsdebuginfo()
+                </Action>
+            </Macro>
+            <Macro Name="Fullscreenvideo">
+                <Action>
+                    XBMC2.Fullscreenvideo()
+                </Action>
+            </Macro>
+            <Macro Name="Visualisation">
+                <Action>
+                    XBMC2.Visualisation()
+                </Action>
+            </Macro>
+            <Macro Name="Slideshow">
+                <Action>
+                    XBMC2.Slideshow()
+                </Action>
+            </Macro>
+            <Macro Name="Filestackingdialog">
+                <Action>
+                    XBMC2.Filestackingdialog()
+                </Action>
+            </Macro>
+            <Macro Name="Weather">
+                <Action>
+                    XBMC2.Weather()
+                </Action>
+            </Macro>
+            <Macro Name="Screensaver">
+                <Action>
+                    XBMC2.Screensaver()
+                </Action>
+            </Macro>
+            <Macro Name="Videoosd">
+                <Action>
+                    XBMC2.Videoosd()
+                </Action>
+            </Macro>
+            <Macro Name="Videomenu">
+                <Action>
+                    XBMC2.Videomenu()
+                </Action>
+            </Macro>
+            <Macro Name="Filebrowser">
+                <Action>
+                    XBMC2.Filebrowser()
+                </Action>
+            </Macro>
+            <Macro Name="Startup">
+                <Action>
+                    XBMC2.Startup()
+                </Action>
+            </Macro>
+            <Macro Name="Startwindow">
+                <Action>
+                    XBMC2.Startwindow()
+                </Action>
+            </Macro>
+            <Macro Name="Loginscreen">
+                <Action>
+                    XBMC2.Loginscreen()
+                </Action>
+            </Macro>
+            <Macro Name="Musicoverlay">
+                <Action>
+                    XBMC2.Musicoverlay()
+                </Action>
+            </Macro>
+            <Macro Name="Videooverlay">
+                <Action>
+                    XBMC2.Videooverlay()
+                </Action>
+            </Macro>
+            <Macro Name="Pictureinfo">
+                <Action>
+                    XBMC2.Pictureinfo()
+                </Action>
+            </Macro>
+            <Macro Name="Pluginsettings">
+                <Action>
+                    XBMC2.Pluginsettings()
+                </Action>
+            </Macro>
+            <Macro Name="Fullscreeninfo">
+                <Action>
+                    XBMC2.Fullscreeninfo()
+                </Action>
+            </Macro>
+            <Macro Name="Player Controls">
+                <Action>
+                    XBMC2.PlayerControls()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Experimental">
+            <Macro Name="JSONRPC">
+                <Action>
+                    XBMC2.JSONRPC()
+                </Action>
+            </Macro>
+            <Macro Name="HTTPAPI">
+                <Action>
+                    XBMC2.HTTPAPI()
+                </Action>
+            </Macro>
+            <Macro Name="GetCurrentlyPlayingFilename">
+                <Action>
+                    XBMC2.GetCurrentlyPlayingFilename()
+                </Action>
+            </Macro>
+            <Macro Name="SendNotification">
+                <Action>
+                    XBMC2.SendNotification()
+                </Action>
+            </Macro>
+        </Folder>
+    </Folder>
+    <Folder Name="Other Examples" Enabled="False">
+        <Folder Name="State Folder Example">
+            <Folder Name="Folder1" id="810">
+                <Macro Name="Enable other Folder">
+                    <Event Name="Blue" />
+                    <Action>
+                        EventGhost.EnableExclusive(XmlIdLink(814))
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Folder2" id="814" Enabled="False">
+                <Macro Name="Enable other Folder">
+                    <Event Name="Blue" />
+                    <Action>
+                        EventGhost.EnableExclusive(XmlIdLink(818))
+                    </Action>
+                </Macro>
+            </Folder>
+            <Folder Name="Folder3" id="818" Enabled="False">
+                <Macro Name="Enable other Folder">
+                    <Event Name="Blue" />
+                    <Action>
+                        EventGhost.EnableExclusive(XmlIdLink(810))
+                    </Action>
+                </Macro>
+            </Folder>
+        </Folder>
+        <Folder Name="State Macro Example">
+            <Macro Name="State1" id="823" Enabled="False">
+                <Event Name="Green" />
+                <Action>
+                    EventGhost.DisableItem(XmlIdLink(823))
+                </Action>
+                <Action>
+                    EventGhost.EnableItem(XmlIdLink(828))
+                </Action>
+                <Action Enabled="False">
+                    System.MonitorPowerOff()
+                </Action>
+            </Macro>
+            <Macro Name="State2" id="828">
+                <Event Name="Green" />
+                <Action>
+                    EventGhost.EnableItem(XmlIdLink(823))
+                </Action>
+                <Action>
+                    EventGhost.DisableItem(XmlIdLink(828))
+                </Action>
+                <Action>
+                    System.MonitorPowerOn()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="State Macro Example 2">
+            <Macro Name="Macro1" id="834" Enabled="False">
+                <Event Name="Yellow" />
+                <Action>
+                    EventGhost.EnableExclusive(XmlIdLink(837))
+                </Action>
+            </Macro>
+            <Macro Name="Macro2" id="837">
+                <Event Name="Yellow" />
+                <Action>
+                    EventGhost.EnableExclusive(XmlIdLink(840))
+                </Action>
+            </Macro>
+            <Macro Name="Macro3" id="840" Enabled="False">
+                <Event Name="Yellow" />
+                <Action>
+                    EventGhost.EnableExclusive(XmlIdLink(834))
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="E-mail">
+            <Macro Name="Start MY observation" Expanded="True">
+                <Action>
+                    E_mail.StartObservation([u'torrents', 1, [u'gmail'], u'EMail_Total', 1, [(1, 2, u'torrent'), (0, -1, u''), (0, -1, u''), (0, -1, u''), (0, -1, u''), (0, -1, u'')], True, True, 1, (255, 255, 255), (0, 0, 0), True, u'EMail_Torrent', 3, False])
+                </Action>
+            </Macro>
+            <Macro Name="Start observation" Expanded="True">
+                <Action>
+                    E_mail.StartObservation()
+                </Action>
+            </Macro>
+            <Macro Name="Abort observation" Expanded="True">
+                <Action>
+                    E_mail.AbortObservation()
+                </Action>
+            </Macro>
+            <Macro Name="Abort all observations" Expanded="True">
+                <Action>
+                    E_mail.AbortAllObservations()
+                </Action>
+            </Macro>
+            <Macro Name="Send e-mail">
+                <Action>
+                    E_mail.SendEmail()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Samsung Smart TV">
+            <Macro Name="Navigational Control Up">
+                <Action>
+                    SamsungCommunicator.Up()
+                </Action>
+            </Macro>
+            <Macro Name="Navigational Control Down">
+                <Action>
+                    SamsungCommunicator.Down()
+                </Action>
+            </Macro>
+            <Macro Name="Navigational Control Left">
+                <Action>
+                    SamsungCommunicator.Left()
+                </Action>
+            </Macro>
+            <Macro Name="Navigational Control Right">
+                <Action>
+                    SamsungCommunicator.Right()
+                </Action>
+            </Macro>
+            <Macro Name="Navigational Control Enter">
+                <Action>
+                    SamsungCommunicator.Enter()
+                </Action>
+            </Macro>
+            <Macro Name="Show settings menu">
+                <Action>
+                    SamsungCommunicator.Menu()
+                </Action>
+            </Macro>
+            <Macro Name="Volume up">
+                <Action>
+                    SamsungCommunicator.VolUp()
+                </Action>
+            </Macro>
+            <Macro Name="Volume down">
+                <Action>
+                    SamsungCommunicator.VolDown()
+                </Action>
+            </Macro>
+            <Macro Name="Return (menu navigation)">
+                <Action>
+                    SamsungCommunicator.Return()
+                </Action>
+            </Macro>
+            <Macro Name="Switch to next HDMI source">
+                <Action>
+                    SamsungCommunicator.Source()
+                </Action>
+            </Macro>
+            <Macro Name="Channel up">
+                <Action>
+                    SamsungCommunicator.ChUp()
+                </Action>
+            </Macro>
+            <Macro Name="Channel down">
+                <Action>
+                    SamsungCommunicator.ChDown()
+                </Action>
+            </Macro>
+            <Macro Name="Display info" Expanded="True">
+                <Action>
+                    SamsungCommunicator.Info()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle mute">
+                <Action>
+                    SamsungCommunicator.Mute()
+                </Action>
+            </Macro>
+            <Macro Name="Picture mode">
+                <Action>
+                    SamsungCommunicator.PMode()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle power">
+                <Action>
+                    SamsungCommunicator.Power()
+                </Action>
+            </Macro>
+            <Macro Name="Power on">
+                <Action>
+                    SamsungCommunicator.PwrOn()
+                </Action>
+            </Macro>
+            <Macro Name="Power off">
+                <Action>
+                    SamsungCommunicator.PwrOff()
+                </Action>
+            </Macro>
+            <Macro Name="Start recording">
+                <Action>
+                    SamsungCommunicator.Rec()
+                </Action>
+            </Macro>
+            <Macro Name="Stand by mode (?)">
+                <Action>
+                    SamsungCommunicator.StbMode()
+                </Action>
+            </Macro>
+            <Macro Name="Social app (?)">
+                <Action>
+                    SamsungCommunicator.Social()
+                </Action>
+            </Macro>
+            <Macro Name="E-Manual (?)">
+                <Action>
+                    SamsungCommunicator.Man()
+                </Action>
+            </Macro>
+            <Macro Name="Switching between 3D modes">
+                <Action>
+                    SamsungCommunicator.3D()
+                </Action>
+            </Macro>
+            <Macro Name="Raw action">
+                <Action>
+                    SamsungCommunicator.RawAction()
+                </Action>
+            </Macro>
+            <Macro Name="Parse current context" Expanded="True">
+                <Action>
+                    SamsungCommunicator.ParseContext(XmlIdLink(1031), XmlIdLink(1855))
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Export Active Context">
+            <Macro Name="Parse current context" Expanded="True">
+                <Action>
+                    ExportActiveContext.ParseContext()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="SoundGraph iMON VFD/LCD Display">
+            <Macro Name="Display Text" Expanded="True">
+                <Action>
+                    iMON_Display.DisplayText(100, u'hello', '', 2, 8.0, 1.0, -1, -1.0, -1, True, 0, None, 60.0, None)
+                </Action>
+            </Macro>
+            <Macro Name="Clear text" Expanded="True">
+                <Action>
+                    iMON_Display.ClearText()
+                </Action>
+            </Macro>
+            <Folder Name="Advanced actions" Expanded="True">
+                <Macro Name="Acquire Display" />
+                <Macro Name="Get Display Type" Expanded="True">
+                    <Action>
+                        iMON_Display.GetDisplayType()
+                    </Action>
+                </Macro>
+                <Macro Name="Is Initialized">
+                    <Action>
+                        iMON_Display.IsInitialized()
+                    </Action>
+                </Macro>
+                <Macro Name="Is Plugin Mode" Expanded="True">
+                    <Action>
+                        iMON_Display.IsPluginMode()
+                    </Action>
+                </Macro>
+                <Macro Name="Get Current Display Text" Expanded="True">
+                    <Action>
+                        iMON_Display.GetCurrentDisplayText()
+                    </Action>
+                </Macro>
+                <Macro Name="Get Message Stack" Expanded="True">
+                    <Action>
+                        iMON_Display.GetMessageStack()
+                    </Action>
+                </Macro>
+                <Macro Name="Release Display" Expanded="True">
+                    <Action>
+                        iMON_Display.ReleaseDisplay()
+                    </Action>
+                </Macro>
+            </Folder>
+        </Folder>
+    </Folder>
+    <Folder Name="X10 Events" Enabled="False">
+        <Macro Name="Show OSD: X10">
+            <Event Name="X10.Power" />
+            <Event Name="X10.DeviceStart" />
+            <Event Name="X10.Stop" />
+            <Event Name="X10.Delete" />
+            <Event Name="X10.VolumeUp" />
+            <Event Name="X10.VolumeDown" />
+            <Event Name="X10.Rewind" />
+            <Event Name="X10.Play" />
+            <Event Name="X10.Forward" />
+            <Event Name="X10.NextTrack" />
+            <Event Name="X10.Pause" />
+            <Event Name="X10.ChannelUp" />
+            <Event Name="X10.Num1" />
+            <Event Name="X10.Num2" />
+            <Event Name="X10.Num3" />
+            <Event Name="X10.Num4" />
+            <Event Name="X10.Num5" />
+            <Event Name="X10.Num6" />
+            <Event Name="X10.Num7" />
+            <Event Name="X10.Num8" />
+            <Event Name="X10.Num9" />
+            <Event Name="X10.Down" />
+            <Event Name="X10.Up" />
+            <Event Name="X10.Ok" />
+            <Event Name="X10.Snapshot" />
+            <Event Name="X10.Music" />
+            <Event Name="X10.VCR" />
+            <Event Name="X10.DVD" />
+            <Action>
+                EventGhost.ShowOSD(u'X10', u'0;-30;0;0;0;700;0;0;0;1;0;0;2;32;Arial', (255, 255, 255), (0, 0, 0), 0, (0, 0), 0, 3.0, False)
+            </Action>
+        </Macro>
+    </Folder>
+    <Macro Name="Start Zoom Player" Enabled="False">
+        <Event Name="DVD" />
+        <Action>
+            EventGhost.JumpIfLongPress(3.0, XmlIdLink(1135))
+        </Action>
+        <Action>
+            System.Execute(u'{eg.folderPath.ProgramFiles}\\Zoom Player\\zplayer.exe', u'/TCP: 4769', 0, False, 2, u'')
+        </Action>
+        <Action>
+            ZoomPlayer.fnBringToFront()
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Zoom Player" Enabled="False">
+        <Event Name="Task.Activated.zplayer" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1032))
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: PowerDVD">
+        <Event Name="Task.Activated.PowerDVD11" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1437))
+        </Action>
+        <Action Name="Show XBMC OSD: PowerDVD mode">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'PowerDVD mode\'\neg.globals.exclusive_mode = u\'PowerDVD\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action Name="Show OSD: PowerDVD mode">
+            EventGhost.ShowOSD(u'{eg.globals.MSG}', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: VLC">
+        <Event Name="Task.Activated.vlc" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1507))
+        </Action>
+        <Action Name="Show XBMC OSD: PowerDVD mode">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'VLC mode\'\neg.globals.exclusive_mode = u\'VLC\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action Name="Show OSD: PowerDVD mode">
+            EventGhost.ShowOSD(u'VLC', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Winamp">
+        <Event Name="Task.Activated.winamp" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1137))
+        </Action>
+        <Action>
+            EventGhost.ShowOSD(u'Winamp mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Winamp mode">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Winamp mode\'\neg.globals.exclusive_mode = u\'Winamp\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: XBMC">
+        <Event Name="Task.Activated.XBMC" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1293))
+        </Action>
+        <Action Name="Show OSD: XBMC mode">
+            EventGhost.ShowOSD(u'XBMC', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: XBMC mode">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'XBMC mode\'\neg.globals.exclusive_mode = u\'XBMC\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\n#TriggerEvent\neg.log.PrintNotice(\'%s %s %s %s\' % (eg.event.string, eg.event.prefix, eg.event.suffix, eg.event.payload) )\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Mouse Emulation">
+        <Event Name="Task.Activated.MOUSE" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1185))
+        </Action>
+        <Action>
+            EventGhost.ShowOSD(u'Mouse mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Mouse mode">
+            EventGhost.PythonScript(u'#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Mouse mode\'\neg.globals.exclusive_mode = u\'Mouse\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\n\n')
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: SamsungTV">
+        <Event Name="Task.Activated.SAMSUNGTV" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1609))
+        </Action>
+        <Action>
+            EventGhost.EnableItem(XmlIdLink(16))
+        </Action>
+        <Action Name="Show OSD: Samsung TV">
+            EventGhost.ShowOSD(u'Samsung TV mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Samsung TV">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Samsung TV mode\'\neg.globals.exclusive_mode = u\'SamsungTV\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Keyboard">
+        <Event Name="Task.Activated.KEYBOARD" />
+        <Event Name="Task.Deactivated.zplayer" />
+        <Event Name="Task.Deactivated.winamp" />
+        <Event Name="Task.Destroyed.XBMC" />
+        <Action>
+            EventGhost.EnableExclusive(XmlIdLink(1223))
+        </Action>
+        <Action Name="Show OSD: Keyboard mode">
+            EventGhost.ShowOSD(u'Keyboard', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Keyboard mode">
+            EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Keyboard mode\'\neg.globals.exclusive_mode = u\'Keyboard\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\n#TriggerEvent\n#eg.log.PrintNotice(\'%s %s %s %s\' % (eg.event.string, eg.event.prefix, eg.event.suffix, eg.event.payload) )\neg.log.PrintNotice("End")\n\n')
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Steam">
+        <Event Name="Task.Activated.Steam" />
+        <Action Name="Enable exclusive: Steam">
+            EventGhost.EnableExclusive(XmlIdLink(1710))
+        </Action>
+        <Action Name="Show OSD: Steam mode">
+            EventGhost.ShowOSD(u'Steam mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Steam mode">
+            EventGhost.PythonScript(u"eg.globals.MSG = u'Steam mode'\neg.globals.exclusive_mode = u'Steam'\neg.plugins.XBMC2.SendNotification(u'EventGhost', eg.globals.MSG)\n\n\n")
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: NC PLUS">
+        <Event Name="Task.Activated.NC_PLUS" />
+        <Action Name="Enable exclusive: NC PLUS">
+            EventGhost.EnableExclusive(XmlIdLink(1711))
+        </Action>
+        <Action Name="Show OSD: Steam mode">
+            EventGhost.ShowOSD(u'NC+ mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: Steam mode">
+            EventGhost.PythonScript(u"eg.globals.MSG = u'NC+ mode'\neg.globals.exclusive_mode = u'NC_PLUS'\neg.plugins.XBMC2.SendNotification(u'EventGhost', eg.globals.MSG)\n\n\n")
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Macro Name="Switch to mode: Dust">
+        <Event Name="Task.Activated.DustAET" />
+        <Action Name="Enable exclusive: Dust">
+            EventGhost.EnableExclusive(XmlIdLink(1672))
+        </Action>
+        <Action Name="Show OSD: Dust mode">
+            EventGhost.ShowOSD(u'Dust mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+        </Action>
+        <Action Name="Show XBMC OSD: DustAET mode">
+            EventGhost.PythonScript(u"eg.globals.MSG = u'DustAET mode'\neg.globals.exclusive_mode = u'DustAET'\neg.plugins.XBMC2.SendNotification(u'EventGhost', eg.globals.MSG)\n\n\n")
+        </Action>
+        <Action>
+            EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+        </Action>
+    </Macro>
+    <Folder Name="Context Folder" id="1031" Expanded="True">
+        <Folder Name="Zoom Player" id="1032" Enabled="False">
+            <Macro Name="Context Navigator">
+                <Event Name="X10.Rename" />
+                <Event Name="Menu" />
+                <Action>
+                    ZoomPlayer.fnContextNav()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Up">
+                <Event Name="Up" />
+                <Action>
+                    ZoomPlayer.Up()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Down">
+                <Event Name="Down" />
+                <Action>
+                    ZoomPlayer.Down()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Left">
+                <Event Name="Left" />
+                <Action>
+                    ZoomPlayer.Left()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Right">
+                <Event Name="Right" />
+                <Action>
+                    ZoomPlayer.Right()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Ok">
+                <Event Name="Ok" />
+                <Action>
+                    ZoomPlayer.Enter()
+                </Action>
+            </Macro>
+            <Macro Name="Play">
+                <Event Name="Play" />
+                <Action>
+                    ZoomPlayer.fnPlay()
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="Pause" />
+                <Action>
+                    ZoomPlayer.fnPause()
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="Stop" />
+                <Action>
+                    ZoomPlayer.fnStop()
+                </Action>
+            </Macro>
+            <Macro Name="Fast Forward">
+                <Event Name="Forward" />
+                <Action>
+                    ZoomPlayer.fnFastForward()
+                </Action>
+            </Macro>
+            <Macro Name="Fast Rewind">
+                <Event Name="Rewind" />
+                <Action>
+                    ZoomPlayer.fnRewind()
+                </Action>
+            </Macro>
+            <Macro Name="Num1">
+                <Event Name="Num1" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'1')
+                </Action>
+            </Macro>
+            <Macro Name="Num2">
+                <Event Name="Num2" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'2')
+                </Action>
+            </Macro>
+            <Macro Name="Num3">
+                <Event Name="Num3" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'3')
+                </Action>
+            </Macro>
+            <Macro Name="Num4">
+                <Event Name="Num4" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'4')
+                </Action>
+            </Macro>
+            <Macro Name="Num5">
+                <Event Name="Num5" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'5')
+                </Action>
+            </Macro>
+            <Macro Name="Num6">
+                <Event Name="Num6" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'6')
+                </Action>
+            </Macro>
+            <Macro Name="Num7">
+                <Event Name="Num7" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'7')
+                </Action>
+            </Macro>
+            <Macro Name="Num8">
+                <Event Name="Num8" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'8')
+                </Action>
+            </Macro>
+            <Macro Name="Num9">
+                <Event Name="Num9" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'9')
+                </Action>
+            </Macro>
+            <Macro Name="Num0">
+                <Event Name="Num0" />
+                <Action>
+                    ZoomPlayer.exDVDNumPad(u'0')
+                </Action>
+            </Macro>
+            <Macro Name="Next Track">
+                <Event Name="NextTrack" />
+                <Action>
+                    ZoomPlayer.fnNextTrack()
+                </Action>
+            </Macro>
+            <Macro Name="Previous Track">
+                <Event Name="PreviousTrack" />
+                <Action>
+                    ZoomPlayer.fnPrevTrack()
+                </Action>
+            </Macro>
+            <Macro Name="DVD Menu">
+                <Event Name="DVDMenu" />
+                <Action Name="because not every DVD has a title menu">
+                    EventGhost.Comment()
+                </Action>
+                <Action Name="and we want to do it with just one key">
+                    EventGhost.Comment()
+                </Action>
+                <Action Name="we simply use both actions. One of it will ">
+                    EventGhost.Comment()
+                </Action>
+                <Action Name="succeed everytime.">
+                    EventGhost.Comment()
+                </Action>
+                <Action>
+                    ZoomPlayer.fnDVDRootMenu()
+                </Action>
+                <Action>
+                    ZoomPlayer.fnDVDTitleMenu()
+                </Action>
+            </Macro>
+            <Macro Name="DVD Audio">
+                <Event Name="DVDAudio" />
+                <Action>
+                    ZoomPlayer.fnDVDAudioMenu()
+                </Action>
+            </Macro>
+            <Macro Name="Zoom In">
+                <Event Name="ChannelUp" />
+                <Action>
+                    ZoomPlayer.fnZoomIn()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Zoom Out">
+                <Event Name="ChannelDown" />
+                <Action>
+                    ZoomPlayer.fnZoomOut()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle Controlbar">
+                <Event Name="EditImage" />
+                <Action>
+                    ZoomPlayer.fnBar()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle Fullscreen">
+                <Event Name="Fullscreen" />
+                <Action>
+                    ZoomPlayer.fnFullScreen()
+                </Action>
+            </Macro>
+            <Macro Name="Exit Zoom Player">
+                <Event Name="Power" />
+                <Action>
+                    ZoomPlayer.fnExit()
+                </Action>
+            </Macro>
+            <Macro Name="Forced Restart" id="1135">
+                <Action Name="Taskkill ZoomPlayer">
+                    System.Execute(u'{eg.folderPath.System}\\taskkill.exe', u'/F /IM zplayer.exe /T', 1, True, 2, u'')
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Winamp" id="1137" Enabled="False">
+            <Macro Name="Play">
+                <Event Name="Play" />
+                <Event Name="Ok" />
+                <Action>
+                    Winamp.TogglePlay()
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="Stop" />
+                <Action>
+                    Winamp.Stop()
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="Pause" />
+                <Action>
+                    Winamp.Pause()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Up">
+                <Event Name="Up" />
+                <Action>
+                    Winamp.PreviousTrack()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Down">
+                <Event Name="Down" />
+                <Action>
+                    Winamp.NextTrack()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Left">
+                <Event Name="Left" />
+                <Action>
+                    Winamp.FastRewind()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Cursor Right">
+                <Event Name="Right" />
+                <Action>
+                    Winamp.FastForward()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat()
+                </Action>
+            </Macro>
+            <Macro Name="Next Track">
+                <Event Name="NextTrack" />
+                <Action>
+                    Winamp.NextTrack()
+                </Action>
+            </Macro>
+            <Macro Name="Previous Track">
+                <Event Name="PreviousTrack" />
+                <Action>
+                    Winamp.PreviousTrack()
+                </Action>
+            </Macro>
+            <Macro Name="Blue -&gt; Visualization">
+                <Event Name="Fullscreen" />
+                <Event Name="X10.Blue" />
+                <Action>
+                    Winamp.ExVis()
+                </Action>
+            </Macro>
+            <Macro Name="Rec -&gt; Exit">
+                <Event Name="X10.Record" />
+                <Action>
+                    Winamp.Exit()
+                </Action>
+            </Macro>
+            <Macro Name="Volume Up">
+                <Event Name="VolumeUp" />
+                <Action>
+                    Winamp.VolumeUp()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.33000000000000002, 0.050000000000000003, 0.050000000000000003, 3.0)
+                </Action>
+            </Macro>
+            <Macro Name="Volume Down">
+                <Event Name="VolumeDown" />
+                <Action>
+                    Winamp.VolumeDown()
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.33000000000000002, 0.050000000000000003, 0.050000000000000003, 3.0)
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Mouse Emulation" id="1185" Enabled="False">
+            <Macro Name="Mouse Move Up">
+                <Event Name="Up" />
+                <Event Name="Num2" />
+                <Event Name="X10.Up" />
+                <Action>
+                    Mouse.GoDirection(0)
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move RightUp">
+                <Event Name="Num3" />
+                <Action>
+                    Mouse.GoDirection(45)
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move Right">
+                <Event Name="Right" />
+                <Event Name="Num6" />
+                <Action>
+                    Mouse.GoDirection(90)
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move RightDown">
+                <Event Name="Num9" />
+                <Action>
+                    Mouse.GoDirection(u'135')
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move Down">
+                <Event Name="Down" />
+                <Event Name="Num8" />
+                <Action>
+                    Mouse.GoDirection(u'180')
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move LeftDown">
+                <Event Name="Num7" />
+                <Action>
+                    Mouse.GoDirection(225)
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move Left">
+                <Event Name="Left" />
+                <Event Name="Num4" />
+                <Action>
+                    Mouse.GoDirection(270)
+                </Action>
+            </Macro>
+            <Macro Name="Mouse Move LeftUp">
+                <Event Name="Num1" />
+                <Action>
+                    Mouse.GoDirection(315)
+                </Action>
+            </Macro>
+            <Macro Name="Ch Up -&gt; Left Mouse Button">
+                <Event Name="X10.Rename" Enabled="False" />
+                <Event Name="X10.ChannelUp" />
+                <Action>
+                    Mouse.LeftButton()
+                </Action>
+            </Macro>
+            <Macro Name="Ch Down -&gt; Right Mouse Button">
+                <Event Name="X10.Snapshot" Enabled="False" />
+                <Event Name="X10.ChannelDown" />
+                <Action>
+                    Mouse.RightButton()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Keyboard Emulation" id="1223" Enabled="False">
+            <Macro Name="Up">
+                <Event Name="Up" />
+                <Action>
+                    Window.SendKeys(u'{Up}')
+                </Action>
+            </Macro>
+            <Macro Name="Down">
+                <Event Name="Down" />
+                <Action>
+                    Window.SendKeys(u'{Down}')
+                </Action>
+            </Macro>
+            <Macro Name="Right">
+                <Event Name="Right" />
+                <Action>
+                    Window.SendKeys(u'{Right}')
+                </Action>
+                <Action Enabled="False">
+                    EventGhost.AutoRepeat(0.59999999999999998, 0.29999999999999999, 0.01, 3.0)
+                </Action>
+            </Macro>
+            <Macro Name="Left">
+                <Event Name="Left" />
+                <Action>
+                    Window.SendKeys(u'{Left}')
+                </Action>
+                <Action Enabled="False">
+                    EventGhost.AutoRepeat(0.59999999999999998, 0.29999999999999999, 0.01, 3.0)
+                </Action>
+            </Macro>
+            <Macro Name="Ok -&gt; Enter Key">
+                <Event Name="Ok" />
+                <Action>
+                    Window.SendKeys(u'{Enter}')
+                </Action>
+            </Macro>
+            <Macro Name="Rec -&gt; Alt+F4">
+                <Event Name="X10.Record" />
+                <Action>
+                    Window.SendKeys(u'{Alt+F4}')
+                </Action>
+            </Macro>
+            <Macro Name="1 -&gt; Switch Window">
+                <Event Name="X10.Num1" />
+                <Action>
+                    Window.SendKeys(u'{Ctrl+Alt+Tab}', False)
+                </Action>
+            </Macro>
+            <Macro Name="2 -&gt; Tab">
+                <Event Name="X10.Num2" />
+                <Action>
+                    Window.SendKeys(u'{Tab}', False)
+                </Action>
+            </Macro>
+            <Macro Name="3 -&gt; Win Key">
+                <Event Name="X10.Num3" />
+                <Action>
+                    Window.SendKeys(u'{Win}', False)
+                </Action>
+            </Macro>
+            <Macro Name="4 -&gt; Minimize">
+                <Event Name="X10.Num4" />
+                <Action>
+                    Window.Minimize()
+                </Action>
+            </Macro>
+            <Macro Name="5 -&gt; Close">
+                <Event Name="X10.Num5" />
+                <Action>
+                    Window.SendKeys(u'{Alt+F4}', False)
+                </Action>
+            </Macro>
+            <Macro Name="6 -&gt; Ctx Key">
+                <Event Name="X10.Num6" />
+                <Action>
+                    Window.SendKeys(u'{Apps}', False)
+                </Action>
+            </Macro>
+            <Macro Name="7 -&gt; Maximize">
+                <Event Name="X10.Num7" />
+                <Action>
+                    Window.Maximize()
+                </Action>
+            </Macro>
+            <Macro Name="8 -&gt; " Enabled="False">
+                <Event Name="X10.Num8" />
+            </Macro>
+            <Macro Name="9 -&gt; " Enabled="False">
+                <Event Name="X10.Num9" />
+            </Macro>
+            <Macro Name="0 -&gt; CTR+ALT+DEL">
+                <Event Name="X10.Num0" />
+                <Action>
+                    Window.SendKeys(u'{Ctrl+Alt+Delete}', False)
+                </Action>
+            </Macro>
+            <Macro Name="Forward -&gt; Tabulator" Expanded="True">
+                <Event Name="Forward" />
+                <Action>
+                    Window.SendKeys(u'{Tabulator}', False)
+                </Action>
+            </Macro>
+            <Macro Name="Rewind -&gt; Shift+Tabulator">
+                <Event Name="Rewind" />
+                <Action>
+                    Window.SendKeys(u'{Shift+Tab}')
+                </Action>
+            </Macro>
+            <Macro Name="ChannelUp -&gt; Plus">
+                <Event Name="ChannelUp" />
+                <Action>
+                    Window.SendKeys(u'+')
+                </Action>
+            </Macro>
+            <Macro Name="ChannelDown -&gt; Minus">
+                <Event Name="ChannelDown" />
+                <Action>
+                    Window.SendKeys(u'-')
+                </Action>
+            </Macro>
+            <Macro Name="Back -&gt; Back" Expanded="True">
+                <Event Name="X10.Delete" />
+                <Action>
+                    Window.SendKeys(u'{Back}', False)
+                </Action>
+            </Macro>
+            <Macro Name="Info -&gt; Esc">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    Window.SendKeys(u'{Esc}', False)
+                </Action>
+            </Macro>
+            <Macro Name="Pause" Expanded="True">
+                <Event Name="X10.Pause" />
+                <Action>
+                    Window.SendKeys(u'{Space}', False)
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="XBMC" id="1293">
+            <Macro Name="Left" Expanded="True">
+                <Event Name="X10.Left" />
+                <Event Name="Joystick.Left" />
+                <Action>
+                    XBMC2.RemoteLeft()
+                </Action>
+            </Macro>
+            <Macro Name="Right">
+                <Event Name="X10.Right" />
+                <Event Name="Joystick.Right" />
+                <Action>
+                    XBMC2.RemoteRight()
+                </Action>
+            </Macro>
+            <Macro Name="Select">
+                <Event Name="X10.Ok" />
+                <Event Name="Joystick.Button2" />
+                <Action>
+                    XBMC2.RemoteSelect()
+                </Action>
+            </Macro>
+            <Macro Name="Up">
+                <Event Name="X10.Up" />
+                <Event Name="Joystick.Up" />
+                <Action>
+                    XBMC2.RemoteUp()
+                </Action>
+            </Macro>
+            <Macro Name="Down">
+                <Event Name="X10.Down" />
+                <Event Name="Joystick.Down" />
+                <Action>
+                    XBMC2.RemoteDown()
+                </Action>
+                <Action Enabled="False">
+                    Speech.TextToSpeech(u'Microsoft Anna - English (United States)', 0, u'Down', 0, 100)
+                </Action>
+            </Macro>
+            <Macro Name="Play">
+                <Event Name="X10.Play" />
+                <Action>
+                    XBMC2.RemotePlay()
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="X10.Pause" />
+                <Event Name="Joystick.Button1" />
+                <Action>
+                    XBMC2.RemotePause()
+                </Action>
+            </Macro>
+            <Macro Name="Reverse">
+                <Event Name="X10.Rewind" />
+                <Action>
+                    XBMC2.RemoteReverse()
+                </Action>
+            </Macro>
+            <Macro Name="Forward">
+                <Event Name="X10.Forward" />
+                <Action>
+                    XBMC2.RemoteForward()
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="X10.Stop" />
+                <Action>
+                    XBMC2.RemoteStop()
+                </Action>
+            </Macro>
+            <Macro Name="Next track">
+                <Event Name="X10.NextTrack" />
+                <Action>
+                    XBMC2.SkipNext()
+                </Action>
+            </Macro>
+            <Macro Name="Previous track">
+                <Event Name="X10.PreviousTrack" />
+                <Action>
+                    XBMC2.SkipPrevious()
+                </Action>
+            </Macro>
+            <Macro Name="Audio/Red -&gt; Ctx">
+                <Event Name="X10.Red" />
+                <Event Name="Joystick.Button3" />
+                <Action Name="Emulate Keystrokes: c">
+                    Window.SendKeys(u'c', False)
+                </Action>
+            </Macro>
+            <Macro Name="Angle/Yellow -&gt; Esc">
+                <Event Name="X10.Yellow" />
+                <Event Name="Joystick.Button4" />
+                <Action Name="Emulate Keystrokes: Esc">
+                    Window.SendKeys(u'{Escape}', False)
+                </Action>
+            </Macro>
+            <Macro Name="Title/Blue -&gt; Menu">
+                <Event Name="X10.Blue" />
+                <Event Name="Joystick.Button5" />
+                <Action>
+                    Window.SendKeys(u'm', False)
+                </Action>
+            </Macro>
+            <Macro Name="Subtitles/Green -&gt; Next Subtitles">
+                <Event Name="X10.Green" />
+                <Action Name="Emulate Keystrokes: l">
+                    Window.SendKeys(u'l', False)
+                </Action>
+            </Macro>
+            <Macro Name="Ch Up -&gt; Vol Up">
+                <Event Name="X10.ChannelUp" />
+                <Event Name="Joystick.Button6" />
+                <Action Name="Emulate Keystrokes: +">
+                    Window.SendKeys(u'=', False)
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.59999999999999998, 0.29999999999999999, 0.01, 3.0)
+                </Action>
+            </Macro>
+            <Macro Name="Ch Down -&gt; Vol Down">
+                <Event Name="X10.ChannelDown" />
+                <Event Name="Joystick.Button8" />
+                <Action Name="Emulate Keystrokes: -">
+                    Window.SendKeys(u'-', False)
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.59999999999999998, 0.29999999999999999, 0.01, 3.0)
+                </Action>
+            </Macro>
+            <Macro Name="1 -&gt; Random">
+                <Event Name="X10.Num1" />
+                <Action>
+                    XBMC2.Random()
+                </Action>
+            </Macro>
+            <Macro Name="2 -&gt; Toggle Subbtitles">
+                <Event Name="X10.Num2" />
+                <Action>
+                    XBMC2.ShowSubtitles()
+                </Action>
+            </Macro>
+            <Macro Name="3 -&gt; Rotate Image">
+                <Event Name="X10.Num3" />
+                <Action Name="Emulate Keystrokes: r">
+                    Window.SendKeys(u'r', False)
+                </Action>
+                <Action Name="Emulate Keystrokes: F9">
+                    Window.SendKeys(u'{F9}', False)
+                </Action>
+            </Macro>
+            <Macro Name="4 -&gt; Aspect Ratio">
+                <Event Name="X10.Num4" />
+                <Action>
+                    XBMC2.AspectRatio()
+                </Action>
+            </Macro>
+            <Macro Name="5 -&gt; Screensaver">
+                <Event Name="X10.Num5" />
+                <Action>
+                    XBMC2.Screensaver()
+                </Action>
+            </Macro>
+            <Macro Name="6 -&gt; SubtitlessOffset">
+                <Event Name="X10.Num6" />
+                <Action>
+                    XBMC2.Subtitledelay()
+                </Action>
+            </Macro>
+            <Macro Name="7 -&gt; NetWorxInfo">
+                <Event Name="X10.Num7" />
+                <Action Name="Emulate Keystrokes: F8">
+                    Window.SendKeys(u'{F8}', False)
+                </Action>
+            </Macro>
+            <Macro Name="8 -&gt; Rating-">
+                <Event Name="X10.Num8" />
+                <Action>
+                    XBMC2.DecreaseRating()
+                </Action>
+            </Macro>
+            <Macro Name="9 -&gt; Rating+">
+                <Event Name="X10.Num9" />
+                <Action>
+                    XBMC2.IncreaseRating()
+                </Action>
+            </Macro>
+            <Macro Name="0 -&gt; Full Player">
+                <Event Name="X10.Num0" />
+                <Event Name="Joystick.Button10" />
+                <Action Name="Emulate Keystrokes: o">
+                    Window.SendKeys(u'{Tabulator}', False)
+                </Action>
+            </Macro>
+            <Macro Name="* -&gt; Debug Info">
+                <Event Name="X10.AcquireImage" />
+                <Action Name="Emulate Keystrokes: o">
+                    Window.SendKeys(u'o', False)
+                </Action>
+            </Macro>
+            <Macro Name="# -&gt; FullScreen" Expanded="True">
+                <Event Name="X10.EditImage" />
+                <Event Name="Joystick.Button9" />
+                <Action Name="Emulate Keystrokes: \" Enabled="False">
+                    Window.SendKeys(u'\\', False)
+                </Action>
+                <Action>
+                    XBMC2.ToggleFullScreen()
+                </Action>
+            </Macro>
+            <Macro Name="Info -&gt; Info">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    Window.SendKeys(u'i', False)
+                </Action>
+            </Macro>
+            <Macro Name="Back -&gt; Back">
+                <Event Name="X10.Delete" />
+                <Action Name="Emulate Keystrokes: Backspace">
+                    Window.SendKeys(u'{Backspace}', False)
+                </Action>
+            </Macro>
+            <Macro Name="REC -&gt; Quit">
+                <Event Name="X10.Record" />
+                <Event Name="Joystick.Button7" />
+                <Action Enabled="False">
+                    XBMC2.Close()
+                </Action>
+                <Action>
+                    EventGhost.JumpIfLongPress(1.5, XmlIdLink(1414))
+                </Action>
+                <Action Name="Emulate Keystrokes: s">
+                    Window.SendKeys(u's', False)
+                </Action>
+            </Macro>
+            <Macro Name="REC long -&gt; restart XBMC" id="1414">
+                <Action>
+                    Window.FindWindow(u'XBMC.exe', None, None, None, None, None, False, 0.0, 0)
+                </Action>
+                <Action>
+                    Window.Close()
+                </Action>
+                <Action>
+                    EventGhost.Wait(4.0)
+                </Action>
+                <Action>
+                    EventGhost.NewJumpIf(XmlIdLink(1885), 2, False)
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyUp -&gt; Mouse Move Up">
+                <Event Name="Joystick.RZ_Up" />
+                <Action>
+                    Mouse.GoDirection(0)
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyDown -&gt; Mouse Move Down">
+                <Event Name="Joystick.RZ_Down" />
+                <Action>
+                    Mouse.GoDirection(u'180')
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyRight -&gt; Mouse Move Right">
+                <Event Name="Joystick.Z_Down" />
+                <Action>
+                    Mouse.GoDirection(90)
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyLeft -&gt; Mouse Move Left">
+                <Event Name="Joystick.Z_Up" />
+                <Action>
+                    Mouse.GoDirection(270)
+                </Action>
+            </Macro>
+            <Macro Name="Joy12 -&gt; Left Mouse Button">
+                <Event Name="Joystick.Button12" />
+                <Action>
+                    Mouse.LeftButton()
+                </Action>
+            </Macro>
+            <Macro Name="Joy11 -&gt; Right Mouse Button">
+                <Event Name="Joystick.Button11" />
+                <Action>
+                    Mouse.RightButton()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="CyberLink PowerDVD" id="1437" Enabled="False">
+            <Macro Name="Play">
+                <Event Name="X10.Play" />
+                <Action>
+                    PowerDvd.Play()
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="X10.Pause" />
+                <Action>
+                    PowerDvd.Pause()
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="X10.Stop" />
+                <Action>
+                    PowerDvd.Stop()
+                </Action>
+            </Macro>
+            <Macro Name="Menu">
+                <Event Name="X10.Blue" />
+                <Action>
+                    PowerDvd.Menu()
+                </Action>
+            </Macro>
+            <Macro Name="Previous chapter">
+                <Event Name="X10.PreviousTrack" />
+                <Action>
+                    PowerDvd.PreviousChapter()
+                </Action>
+            </Macro>
+            <Macro Name="Next chapter">
+                <Event Name="X10.NextTrack" />
+                <Action>
+                    PowerDvd.NextChapter()
+                </Action>
+            </Macro>
+            <Macro Name="Step backward">
+                <Event Name="X10.Rewind" />
+                <Action>
+                    PowerDvd.StepBackward()
+                </Action>
+            </Macro>
+            <Macro Name="Step forward">
+                <Event Name="X10.Forward" />
+                <Action>
+                    PowerDvd.StepForward()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle fullscreen">
+                <Event Name="X10.Num0" />
+                <Action>
+                    PowerDvd.ToggleFullscreen()
+                </Action>
+            </Macro>
+            <Macro Name="Toggle mute">
+                <Action>
+                    PowerDvd.ToggleMute()
+                </Action>
+            </Macro>
+            <Macro Name="Volume up">
+                <Event Name="X10.ChannelUp" />
+                <Action>
+                    PowerDvd.VolumeUp()
+                </Action>
+            </Macro>
+            <Macro Name="Volume down">
+                <Event Name="X10.ChannelDown" />
+                <Action>
+                    PowerDvd.VolumeDown()
+                </Action>
+            </Macro>
+            <Macro Name="Next audio stream">
+                <Event Name="X10.Red" />
+                <Action>
+                    PowerDvd.NextAudioStream()
+                </Action>
+            </Macro>
+            <Macro Name="Next subtitle">
+                <Event Name="X10.Green" />
+                <Action>
+                    PowerDvd.NextSubtitle()
+                </Action>
+            </Macro>
+            <Macro Name="Next angel">
+                <Event Name="X10.Yellow" />
+                <Action>
+                    PowerDvd.NextAngel()
+                </Action>
+            </Macro>
+            <Macro Name="Say-It-Again">
+                <Action>
+                    PowerDvd.SayItAgain()
+                </Action>
+            </Macro>
+            <Macro Name="See-It-All">
+                <Action>
+                    PowerDvd.SeeItAll()
+                </Action>
+            </Macro>
+            <Macro Name="Capture frame">
+                <Action>
+                    PowerDvd.CaptureFrame()
+                </Action>
+            </Macro>
+            <Macro Name="Navigation Up">
+                <Event Name="X10.Up" />
+                <Action>
+                    PowerDvd.NavigationUp()
+                </Action>
+            </Macro>
+            <Macro Name="Navigation Down">
+                <Event Name="X10.Down" />
+                <Action>
+                    PowerDvd.NavigationDown()
+                </Action>
+            </Macro>
+            <Macro Name="Navigation Left">
+                <Event Name="X10.Left" />
+                <Action>
+                    PowerDvd.NavigationLeft()
+                </Action>
+            </Macro>
+            <Macro Name="Navigation Right">
+                <Event Name="X10.Right" />
+                <Action>
+                    PowerDvd.NavigationRight()
+                </Action>
+            </Macro>
+            <Macro Name="Navigation Enter">
+                <Event Name="X10.Ok" />
+                <Action>
+                    PowerDvd.NavigationEnter()
+                </Action>
+            </Macro>
+            <Macro Name="Info" />
+            <Macro Name="Close">
+                <Event Name="X10.Record" />
+                <Action>
+                    PowerDvd.Close()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="VLC media player" id="1507" Enabled="False">
+            <Macro Name="Start">
+                <Action>
+                    VLC.Start()
+                </Action>
+            </Macro>
+            <Macro Name="Quit">
+                <Event Name="X10.Record" />
+                <Action>
+                    VLC.Quit()
+                </Action>
+            </Macro>
+            <Macro Name="Play">
+                <Event Name="X10.Play" />
+                <Action>
+                    VLC.Play()
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="X10.Pause" />
+                <Action>
+                    VLC.Pause()
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="X10.Stop" />
+                <Action>
+                    VLC.Stop()
+                </Action>
+            </Macro>
+            <Macro Name="Fast Forward">
+                <Event Name="X10.Forward" />
+                <Action>
+                    VLC.FastForward()
+                </Action>
+            </Macro>
+            <Macro Name="Fast Rewind">
+                <Event Name="X10.Rewind" />
+                <Action>
+                    VLC.FastRewind()
+                </Action>
+            </Macro>
+            <Macro Name="Play Faster">
+                <Action>
+                    VLC.PlayFaster()
+                </Action>
+            </Macro>
+            <Macro Name="Play Slower">
+                <Action>
+                    VLC.PlaySlower()
+                </Action>
+            </Macro>
+            <Macro Name="Play Normal">
+                <Event Name="X10.Play" />
+                <Action>
+                    VLC.PlayNormal()
+                </Action>
+            </Macro>
+            <Macro Name="Seek">
+                <Action>
+                    VLC.Seek()
+                </Action>
+            </Macro>
+            <Macro Name="Fullscreen">
+                <Event Name="X10.EditImage" />
+                <Action>
+                    VLC.Fullscreen()
+                </Action>
+            </Macro>
+            <Macro Name="Next Playlist Item">
+                <Event Name="X10.NextTrack" />
+                <Action>
+                    VLC.NextPlaylistItem()
+                </Action>
+            </Macro>
+            <Macro Name="Previous Playlist Item">
+                <Event Name="X10.PreviousTrack" />
+                <Action>
+                    VLC.PreviousPlaylistItem()
+                </Action>
+            </Macro>
+            <Macro Name="Next Title">
+                <Action>
+                    VLC.NextTitle()
+                </Action>
+            </Macro>
+            <Macro Name="Previous Title">
+                <Action>
+                    VLC.PreviousTitle()
+                </Action>
+            </Macro>
+            <Macro Name="Next Chapter">
+                <Event Name="X10.Right" />
+                <Action>
+                    VLC.NextChapter()
+                </Action>
+            </Macro>
+            <Macro Name="Previous Chapter">
+                <Event Name="X10.Left" />
+                <Action>
+                    VLC.PreviousChapter()
+                </Action>
+            </Macro>
+            <Macro Name="Current Playlist Status">
+                <Action>
+                    VLC.CurrentPlaylistStatus()
+                </Action>
+            </Macro>
+            <Macro Name="Info -&gt; Stream Info">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    VLC.StreamInfo()
+                </Action>
+            </Macro>
+            <Macro Name="Show Playlist">
+                <Action>
+                    VLC.ShowPlaylist()
+                </Action>
+            </Macro>
+            <Macro Name="Clear Playlist">
+                <Action>
+                    VLC.ClearPlaylist()
+                </Action>
+            </Macro>
+            <Macro Name="Volume Up">
+                <Event Name="X10.Up" />
+                <Action>
+                    VLC.VolumeUp()
+                </Action>
+            </Macro>
+            <Macro Name="Volume Down">
+                <Event Name="X10.Down" />
+                <Action>
+                    VLC.VolumeDown()
+                </Action>
+            </Macro>
+            <Macro Name="My Command">
+                <Action>
+                    VLC.MyCommand()
+                </Action>
+            </Macro>
+            <Macro Name="Simulate hotkey press">
+                <Action>
+                    VLC.SimulateKey()
+                </Action>
+            </Macro>
+            <Macro Name="Get list of hotkeys">
+                <Event Name="X10.Delete" />
+                <Action>
+                    VLC.GetHotkeys()
+                </Action>
+            </Macro>
+            <Macro Name="Get some info">
+                <Action>
+                    VLC.GetSomeInfo()
+                </Action>
+            </Macro>
+            <Macro Name="Get time">
+                <Action>
+                    VLC.GetTime()
+                </Action>
+            </Macro>
+            <Macro Name="Get length">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    VLC.GetLength()
+                </Action>
+            </Macro>
+            <Macro Name="Next audiotrack">
+                <Action>
+                    VLC.NextAtrack()
+                </Action>
+            </Macro>
+            <Macro Name="Previous audiotrack">
+                <Action>
+                    VLC.PreviousAtrack()
+                </Action>
+            </Macro>
+            <Macro Name="Next subtitles">
+                <Event Name="X10.Green" />
+                <Action>
+                    VLC.NextStrack()
+                </Action>
+            </Macro>
+            <Macro Name="Previous subtitles">
+                <Action>
+                    VLC.PreviousStrack()
+                </Action>
+            </Macro>
+            <Macro Name="Help">
+                <Action>
+                    VLC.Help()
+                </Action>
+            </Macro>
+            <Folder Name="DVD menu control">
+                <Macro Name="Go to the DVD menu">
+                    <Action>
+                        VLC.KeyDiscMenu()
+                    </Action>
+                </Macro>
+                <Macro Name="Navigate up">
+                    <Action>
+                        VLC.KeyNavUp()
+                    </Action>
+                </Macro>
+                <Macro Name="Navigate down">
+                    <Action>
+                        VLC.KeyNavDown()
+                    </Action>
+                </Macro>
+                <Macro Name="Navigate left">
+                    <Action>
+                        VLC.KeyNavLeft()
+                    </Action>
+                </Macro>
+                <Macro Name="Navigate right">
+                    <Action>
+                        VLC.KeyNavRight()
+                    </Action>
+                </Macro>
+                <Macro Name="Activate">
+                    <Action>
+                        VLC.KeyNavActivate()
+                    </Action>
+                </Macro>
+            </Folder>
+        </Folder>
+        <Folder Name="Samsung TV" id="1609" Enabled="False">
+            <Macro Name="Up">
+                <Event Name="Up" />
+                <Action>
+                    SamsungCommunicator.Up()
+                </Action>
+            </Macro>
+            <Macro Name="Down">
+                <Event Name="Down" />
+                <Action>
+                    SamsungCommunicator.Down()
+                </Action>
+            </Macro>
+            <Macro Name="Right">
+                <Event Name="Right" />
+                <Action>
+                    SamsungCommunicator.Right()
+                </Action>
+            </Macro>
+            <Macro Name="Left">
+                <Event Name="Left" />
+                <Action>
+                    SamsungCommunicator.Left()
+                </Action>
+            </Macro>
+            <Macro Name="Ok -&gt; Enter Key">
+                <Event Name="Ok" />
+                <Action>
+                    SamsungCommunicator.Enter()
+                </Action>
+            </Macro>
+            <Macro Name="Rec -&gt; Power Off">
+                <Event Name="X10.Record" />
+                <Action>
+                    SamsungCommunicator.PwrOff()
+                </Action>
+            </Macro>
+            <Macro Name="1 -&gt; Picture mode">
+                <Event Name="X10.Num1" />
+                <Action>
+                    SamsungCommunicator.PMode()
+                </Action>
+            </Macro>
+            <Macro Name="2 -&gt; Social app">
+                <Event Name="X10.Num2" />
+                <Action>
+                    SamsungCommunicator.Social()
+                </Action>
+            </Macro>
+            <Macro Name="3 -&gt; 3D">
+                <Event Name="X10.Num3" />
+                <Action>
+                    SamsungCommunicator.3D()
+                </Action>
+            </Macro>
+            <Macro Name="4 -&gt; E-Manual" Expanded="True">
+                <Event Name="X10.Num4" />
+                <Action>
+                    SamsungCommunicator.Man()
+                </Action>
+            </Macro>
+            <Macro Name="5 -&gt; ">
+                <Event Name="X10.Num5" />
+            </Macro>
+            <Macro Name="6 -&gt; ">
+                <Event Name="X10.Num6" />
+                <Action>
+                    Window.SendKeys(u'{Apps}', False)
+                </Action>
+            </Macro>
+            <Macro Name="7 -&gt; ">
+                <Event Name="X10.Num7" />
+            </Macro>
+            <Macro Name="8 -&gt; " Enabled="False">
+                <Event Name="X10.Num8" />
+            </Macro>
+            <Macro Name="9 -&gt; " Enabled="False">
+                <Event Name="X10.Num9" />
+            </Macro>
+            <Macro Name="0 -&gt; ">
+                <Event Name="X10.Num0" />
+            </Macro>
+            <Macro Name="Forward -&gt; ">
+                <Event Name="Forward" />
+            </Macro>
+            <Macro Name="Rewind -&gt; ">
+                <Event Name="Rewind" />
+            </Macro>
+            <Macro Name="ChannelUp -&gt; Vol Up">
+                <Event Name="ChannelUp" />
+                <Action>
+                    SamsungCommunicator.VolUp()
+                </Action>
+            </Macro>
+            <Macro Name="ChannelDown -&gt; Vol Down">
+                <Event Name="ChannelDown" />
+                <Action>
+                    SamsungCommunicator.VolDown()
+                </Action>
+            </Macro>
+            <Macro Name="Back -&gt; Back">
+                <Event Name="X10.Delete" />
+                <Action>
+                    SamsungCommunicator.Return()
+                </Action>
+            </Macro>
+            <Macro Name="Info -&gt; Info">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    SamsungCommunicator.Info()
+                </Action>
+            </Macro>
+            <Macro Name="Title/Blue -&gt; Menu">
+                <Event Name="X10.Blue" />
+                <Action>
+                    SamsungCommunicator.Menu()
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Dust" id="1672" Enabled="False">
+            <Macro Name="Left" Expanded="True">
+                <Event Name="Joystick.Left" />
+                <Event Name="Joystick.Z_Up" />
+                <Action Name="Emulate Keystrokes: a">
+                    Window.SendKeys(u'a', False)
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.10000000000000001, 0.10000000000000001, 0.01, 1.0)
+                </Action>
+            </Macro>
+            <Macro Name="Right" Expanded="True">
+                <Event Name="Joystick.Right" />
+                <Event Name="Joystick.Z_Down" />
+                <Action Name="Emulate Keystrokes: d">
+                    Window.SendKeys(u'd', False)
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.10000000000000001, 0.10000000000000001, 0.01, 1.0)
+                </Action>
+            </Macro>
+            <Macro Name="Up" Expanded="True">
+                <Event Name="Joystick.Up" />
+                <Event Name="Joystick.RZ_Up" />
+                <Action Name="Emulate Keystrokes: w">
+                    Window.SendKeys(u'w', False)
+                </Action>
+            </Macro>
+            <Macro Name="Down" Expanded="True">
+                <Event Name="Joystick.Down" />
+                <Event Name="Joystick.RZ_Down" />
+                <Action Name="Emulate Keystrokes: s">
+                    Window.SendKeys(u's', False)
+                </Action>
+                <Action>
+                    EventGhost.AutoRepeat(0.10000000000000001, 0.10000000000000001, 0.01, 1.0)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn1 -&gt; Normal Attack">
+                <Event Name="Joystick.Button1" />
+                <Action Name="Emulate Keystrokes: j">
+                    Window.SendKeys(u'j', True)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn2 -&gt; Jump ">
+                <Event Name="Joystick.Button2" />
+                <Action Name="Emulate Keystrokes: {Space}">
+                    Window.SendKeys(u'{Space}', False)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn3 -&gt; Throw">
+                <Event Name="Joystick.Button3" />
+                <Action Name="Emulate Keystrokes: l">
+                    Window.SendKeys(u'j', False)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn4 -&gt; Scondary Attack" Expanded="True">
+                <Event Name="Joystick.Button4" />
+                <Action Name="Emulate Keystrokes: k">
+                    Window.SendKeys(u'k', False)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn5 -&gt; Dash left" Expanded="True">
+                <Event Name="Joystick.Button5" />
+                <Action Name="Emulate Keystrokes: q">
+                    Window.SendKeys(u'q', False)
+                </Action>
+            </Macro>
+            <Macro Name="GamePadBtn6 -&gt; Dash richt" Expanded="True">
+                <Event Name="Joystick.Button6" />
+                <Action Name="Emulate Keystrokes: e">
+                    Window.SendKeys(u'e', False)
+                </Action>
+            </Macro>
+        </Folder>
+        <Folder Name="Steam" id="1710" Enabled="False" />
+        <Folder Name="NC_PLUS" id="1711" Enabled="False">
+            <Macro Name="Left">
+                <Event Name="X10.Left" />
+                <Event Name="Joystick.Left" />
+                <Action>
+                    Window2.SendNCPlusKey('LEFT')
+                </Action>
+            </Macro>
+            <Macro Name="Right">
+                <Event Name="X10.Right" />
+                <Event Name="Joystick.Right" />
+                <Action>
+                    Window2.SendNCPlusKey('RIGHT')
+                </Action>
+            </Macro>
+            <Macro Name="Select">
+                <Event Name="X10.Ok" />
+                <Event Name="Joystick.Button2" />
+                <Action>
+                    Window2.SendNCPlusKey('OK')
+                </Action>
+            </Macro>
+            <Macro Name="Up">
+                <Event Name="X10.Up" />
+                <Event Name="Joystick.Up" />
+                <Action>
+                    Window2.SendNCPlusKey('UP')
+                </Action>
+            </Macro>
+            <Macro Name="Down">
+                <Event Name="X10.Down" />
+                <Event Name="Joystick.Down" />
+                <Action>
+                    Window2.SendNCPlusKey('DOWN')
+                </Action>
+            </Macro>
+            <Macro Name="Play">
+                <Event Name="X10.Play" />
+                <Action>
+                    Window2.SendNCPlusKey('PLAY')
+                </Action>
+            </Macro>
+            <Macro Name="Pause">
+                <Event Name="X10.Pause" />
+                <Event Name="Joystick.Button1" />
+                <Action>
+                    Window2.SendNCPlusKey('PAUSE')
+                </Action>
+            </Macro>
+            <Macro Name="Reverse">
+                <Event Name="X10.Rewind" />
+                <Action>
+                    Window2.SendNCPlusKey('REV')
+                </Action>
+            </Macro>
+            <Macro Name="Forward">
+                <Event Name="X10.Forward" />
+                <Action>
+                    Window2.SendNCPlusKey('FF')
+                </Action>
+            </Macro>
+            <Macro Name="Stop">
+                <Event Name="X10.Stop" />
+                <Action>
+                    Window2.SendNCPlusKey('STOP')
+                </Action>
+            </Macro>
+            <Macro Name="Next track -&gt; RED" Expanded="True">
+                <Event Name="X10.NextTrack" />
+                <Action>
+                    Window2.SendNCPlusKey('RED')
+                </Action>
+            </Macro>
+            <Macro Name="Previous track -&gt; BLUE" Expanded="True">
+                <Event Name="X10.PreviousTrack" />
+                <Action>
+                    Window2.SendNCPlusKey('BLUE')
+                </Action>
+            </Macro>
+            <Macro Name="Audio/Red -&gt; NC+ on/off">
+                <Event Name="X10.Red" />
+                <Event Name="Joystick.Button3" />
+                <Action Name="ncplus_power">
+                    EventGhost.PythonScript(u'import os, sys, urllib2\n\nHOST = "192.168.1.105"\nPORT = 8080\nUUID = "18d848f0-1dd2-11b2-bf00-000391e19ead"\n\nVOD    = 361\nPOWER  = 116\nN      = 174\nEPG    = 365\nPORTAL = 102\n\nINFO   = 358\nAPP    = 367\nOPT    = 357\n\nVOL_P  = 115\nVOL_M  = 114\n\nUP     = 103\nLEFT   = 105\nOK     = 352\nRIGHT  = 106\nDOWN   = 108\n\nPR_P   = 402\nPR_M   = 403\n\nBACK   = 158\n\nSTOP   = 128\nREV    = 168 \nPAUSE  = 119\nPLAY   = 207\nFF     = 159\nREC    = 167\n\n\nMUTE   = 113\nPORTAL = 102\nTEXT   = 388\nLIST   = 395\n\nRADIO  = 385\n\nRED    = 398\nGREEN  = 399\nYELLOW = 400\nBLUE   = 401\n\nD1      =   2\nD2      =   3\nD3      =   4\nD4      =   5\nD5      =   6\nD6      =   7\nD7      =   8\nD8      =   9\nD9      =  10\nD0      =  11\n\nSETUP  =  367\nSTAR   =    1\n\n\nkeys={\'VOD\'    : 361,\n      \'POWER\'  : 116,\n      \'N\'      : 174,\n      \'EPG\'    : 365,\n      \'HOME\'   : 102,\n\n      \'INFO\'   : 358,\n      \'APP\'    : 367,\n      \'OPT\'    : 357,\n\n      \'VOL_P\'  : 115,\n      \'VOL_M\'  : 114,\n\n      \'UP\'     : 103,\n      \'LEFT\'   : 105,\n      \'OK\'     : 352,\n      \'RIGHT\'  : 106,\n      \'DOWN\'   : 108,\n\n      \'PR_P\'   : 402,\n      \'PR_M\'   : 403,\n\n      \'BACK\'   : 158,\n\n      \'STOP\'   : 128,\n      \'REV\'    : 168,\n      \'PAUSE\'  : 119,\n      \'PLAY\'   : 207,\n      \'FF\'     : 159,\n      \'REC\'    : 167,\n\n\n      \'MUTE\'   : 113,\n      \'PORTAL\' : 102,\n      \'TEXT\'   : 388,\n      \'LIST\'   : 395,\n\n      \'RADIO\'  : 385,\n\n      \'RED\'    : 398,\n      \'GREEN\'  : 399,\n      \'YELLOW\' : 400, # music+ wimp\n      \'BLUE\'   : 401, # netVOD+\n\n      \'1\'      :   2,\n      \'2\'      :   3,\n      \'3\'      :   4,\n      \'4\'      :   5,\n      \'5\'      :   6,\n      \'6\'      :   7,\n      \'7\'      :   8,\n      \'8\'      :   9,\n      \'9\'      :  10,\n      \'0\'      :  11,\n\n      \'SETUP\'  : 367,\n      \'STAR\'   :   1,\n}\n\ndef send_soap(status, key):\n    msg = """&lt;?xml version="1.0" encoding="utf-8"?&gt;\n&lt;s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"&gt;\n   &lt;s:Body&gt;\n      &lt;u:ProcessInputEvent xmlns:u="urn:adbglobal.com:service:X_ADB_RemoteControl:1"&gt;\n         &lt;InputEvent&gt;ev=%s,code=%d&lt;/InputEvent&gt;\n      &lt;/u:ProcessInputEvent&gt;\n   &lt;/s:Body&gt;\n&lt;/s:Envelope&gt;""" % (status, key)\n    url = "http://%s:%d/upnpfun/ctrl/uuid_%s/04" % (HOST, PORT, UUID)\n    req = urllib2.Request(url, msg);\n    req.add_header("SOAPACTION", \'"urn:adbglobal.com:service:X_ADB_RemoteControl:1#ProcessInputEvent"\');\n    req.add_header(\'Content-type\', \'application/xml\');\n    res = urllib2.urlopen(req).read();\n    #print res\n\ndef send_key(key):\n    #print key\n    k =keys.get(key.upper(),-1)\n    #print k\n    send_soap("keydn", k)\n    send_soap("keyup", k)\n\nsend_key(\'power\')\n')
+                </Action>
+            </Macro>
+            <Macro Name="Angle/Yellow -&gt; NC+ mute">
+                <Event Name="X10.Yellow" />
+                <Event Name="Joystick.Button4" />
+                <Action Name="ncplus_mute">
+                    EventGhost.PythonScript(u'import os, sys, urllib2\n\nHOST = "192.168.1.105"\nPORT = 8080\nUUID = "18d848f0-1dd2-11b2-bf00-000391e19ead"\n\nVOD    = 361\nPOWER  = 116\nN      = 174\nEPG    = 365\nPORTAL = 102\n\nINFO   = 358\nAPP    = 367\nOPT    = 357\n\nVOL_P  = 115\nVOL_M  = 114\n\nUP     = 103\nLEFT   = 105\nOK     = 352\nRIGHT  = 106\nDOWN   = 108\n\nPR_P   = 402\nPR_M   = 403\n\nBACK   = 158\n\nSTOP   = 128\nREV    = 168 \nPAUSE  = 119\nPLAY   = 207\nFF     = 159\nREC    = 167\n\n\nMUTE   = 113\nPORTAL = 102\nTEXT   = 388\nLIST   = 395\n\nRADIO  = 385\n\nRED    = 398\nGREEN  = 399\nYELLOW = 400\nBLUE   = 401\n\nD1      =   2\nD2      =   3\nD3      =   4\nD4      =   5\nD5      =   6\nD6      =   7\nD7      =   8\nD8      =   9\nD9      =  10\nD0      =  11\n\nSETUP  =  367\nSTAR   =    1\n\n\nkeys={\'VOD\'    : 361,\n      \'POWER\'  : 116,\n      \'N\'      : 174,\n      \'EPG\'    : 365,\n      \'HOME\'   : 102,\n\n      \'INFO\'   : 358,\n      \'APP\'    : 367,\n      \'OPT\'    : 357,\n\n      \'VOL_P\'  : 115,\n      \'VOL_M\'  : 114,\n\n      \'UP\'     : 103,\n      \'LEFT\'   : 105,\n      \'OK\'     : 352,\n      \'RIGHT\'  : 106,\n      \'DOWN\'   : 108,\n\n      \'PR_P\'   : 402,\n      \'PR_M\'   : 403,\n\n      \'BACK\'   : 158,\n\n      \'STOP\'   : 128,\n      \'REV\'    : 168,\n      \'PAUSE\'  : 119,\n      \'PLAY\'   : 207,\n      \'FF\'     : 159,\n      \'REC\'    : 167,\n\n\n      \'MUTE\'   : 113,\n      \'PORTAL\' : 102,\n      \'TEXT\'   : 388,\n      \'LIST\'   : 395,\n\n      \'RADIO\'  : 385,\n\n      \'RED\'    : 398,\n      \'GREEN\'  : 399,\n      \'YELLOW\' : 400, # music+ wimp\n      \'BLUE\'   : 401, # netVOD+\n\n      \'1\'      :   2,\n      \'2\'      :   3,\n      \'3\'      :   4,\n      \'4\'      :   5,\n      \'5\'      :   6,\n      \'6\'      :   7,\n      \'7\'      :   8,\n      \'8\'      :   9,\n      \'9\'      :  10,\n      \'0\'      :  11,\n\n      \'SETUP\'  : 367,\n      \'STAR\'   :   1,\n}\n\ndef send_soap(status, key):\n    msg = """&lt;?xml version="1.0" encoding="utf-8"?&gt;\n&lt;s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"&gt;\n   &lt;s:Body&gt;\n      &lt;u:ProcessInputEvent xmlns:u="urn:adbglobal.com:service:X_ADB_RemoteControl:1"&gt;\n         &lt;InputEvent&gt;ev=%s,code=%d&lt;/InputEvent&gt;\n      &lt;/u:ProcessInputEvent&gt;\n   &lt;/s:Body&gt;\n&lt;/s:Envelope&gt;""" % (status, key)\n    url = "http://%s:%d/upnpfun/ctrl/uuid_%s/04" % (HOST, PORT, UUID)\n    req = urllib2.Request(url, msg);\n    req.add_header("SOAPACTION", \'"urn:adbglobal.com:service:X_ADB_RemoteControl:1#ProcessInputEvent"\');\n    req.add_header(\'Content-type\', \'application/xml\');\n    res = urllib2.urlopen(req).read();\n    #print res\n\ndef send_key(key):\n    #print key\n    k =keys.get(key.upper(),-1)\n    #print k\n    send_soap("keydn", k)\n    send_soap("keyup", k)\n\nsend_key(\'mute\')\n')
+                </Action>
+            </Macro>
+            <Macro Name="Title/Blue -&gt; VOD" Expanded="True">
+                <Event Name="X10.Blue" />
+                <Event Name="Joystick.Button5" />
+                <Action>
+                    Window2.SendNCPlusKey('VOD')
+                </Action>
+            </Macro>
+            <Macro Name="Subtitles/Green -&gt; OPT" Expanded="True">
+                <Event Name="X10.Green" />
+                <Action>
+                    Window2.SendNCPlusKey('OPT')
+                </Action>
+            </Macro>
+            <Macro Name="Ch Up -&gt; Channel +" Expanded="True">
+                <Event Name="X10.ChannelUp" />
+                <Event Name="Joystick.Button6" />
+                <Action>
+                    Window2.SendNCPlusKey('PR_P')
+                </Action>
+            </Macro>
+            <Macro Name="Ch Down -&gt; Channel -" Expanded="True">
+                <Event Name="X10.ChannelDown" />
+                <Event Name="Joystick.Button8" />
+                <Action>
+                    Window2.SendNCPlusKey('PR_M')
+                </Action>
+            </Macro>
+            <Macro Name="1 -&gt; 1" Expanded="True">
+                <Event Name="X10.Num1" />
+                <Action>
+                    Window2.SendNCPlusKey('1')
+                </Action>
+            </Macro>
+            <Macro Name="2 -&gt; 2" Expanded="True">
+                <Event Name="X10.Num2" />
+                <Action>
+                    Window2.SendNCPlusKey('2')
+                </Action>
+            </Macro>
+            <Macro Name="3 -&gt; 3" Expanded="True">
+                <Event Name="X10.Num3" />
+                <Action>
+                    Window2.SendNCPlusKey('3')
+                </Action>
+            </Macro>
+            <Macro Name="4 -&gt; 4" Expanded="True">
+                <Event Name="X10.Num4" />
+                <Action>
+                    Window2.SendNCPlusKey('4')
+                </Action>
+            </Macro>
+            <Macro Name="5 -&gt; 5" Expanded="True">
+                <Event Name="X10.Num5" />
+                <Action>
+                    Window2.SendNCPlusKey('5')
+                </Action>
+            </Macro>
+            <Macro Name="6 -&gt; 6" Expanded="True">
+                <Event Name="X10.Num6" />
+                <Action>
+                    Window2.SendNCPlusKey('6')
+                </Action>
+            </Macro>
+            <Macro Name="7 -&gt; 7" Expanded="True">
+                <Event Name="X10.Num7" />
+                <Action>
+                    Window2.SendNCPlusKey('7')
+                </Action>
+            </Macro>
+            <Macro Name="8 -&gt; 8" Expanded="True">
+                <Event Name="X10.Num8" />
+                <Action>
+                    Window2.SendNCPlusKey('8')
+                </Action>
+            </Macro>
+            <Macro Name="9 -&gt; 9" Expanded="True">
+                <Event Name="X10.Num9" />
+                <Action>
+                    Window2.SendNCPlusKey('9')
+                </Action>
+            </Macro>
+            <Macro Name="0 -&gt; 0" Expanded="True">
+                <Event Name="X10.Num0" />
+                <Event Name="Joystick.Button10" />
+                <Action>
+                    Window2.SendNCPlusKey('0')
+                </Action>
+            </Macro>
+            <Macro Name="* -&gt; EPG" Expanded="True">
+                <Event Name="X10.AcquireImage" />
+                <Action>
+                    Window2.SendNCPlusKey('EPG')
+                </Action>
+            </Macro>
+            <Macro Name="# -&gt; List" Expanded="True">
+                <Event Name="X10.EditImage" />
+                <Event Name="Joystick.Button9" />
+                <Action>
+                    Window2.SendNCPlusKey('LIST')
+                </Action>
+            </Macro>
+            <Macro Name="Info -&gt; Info" Expanded="True">
+                <Event Name="X10.TVPreview" />
+                <Action>
+                    Window2.SendNCPlusKey('INFO')
+                </Action>
+            </Macro>
+            <Macro Name="Back -&gt; Back" Expanded="True">
+                <Event Name="X10.Delete" />
+                <Action>
+                    Window2.SendNCPlusKey('BACK')
+                </Action>
+            </Macro>
+            <Macro Name="REC -&gt; Quit" Expanded="True">
+                <Event Name="X10.Record" />
+                <Event Name="Joystick.Button7" />
+                <Action>
+                    Window2.SendNCPlusKey('REC')
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyUp -&gt; Mouse Move Up">
+                <Event Name="Joystick.RZ_Up" />
+                <Action>
+                    Mouse.GoDirection(0)
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyDown -&gt; Mouse Move Down">
+                <Event Name="Joystick.RZ_Down" />
+                <Action>
+                    Mouse.GoDirection(u'180')
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyRight -&gt; Mouse Move Right">
+                <Event Name="Joystick.Z_Down" />
+                <Action>
+                    Mouse.GoDirection(90)
+                </Action>
+            </Macro>
+            <Macro Name="RightJoyLeft -&gt; Mouse Move Left">
+                <Event Name="Joystick.Z_Up" />
+                <Action>
+                    Mouse.GoDirection(270)
+                </Action>
+            </Macro>
+            <Macro Name="Joy12 -&gt; Left Mouse Button">
+                <Event Name="Joystick.Button12" />
+                <Action>
+                    Mouse.LeftButton()
+                </Action>
+            </Macro>
+            <Macro Name="Joy11 -&gt; Right Mouse Button">
+                <Event Name="Joystick.Button11" />
+                <Action>
+                    Mouse.RightButton()
+                </Action>
+            </Macro>
+        </Folder>
+    </Folder>
+    <Folder Name="Global Macros - allway aviable" id="1855" Expanded="True">
+        <Macro Name="Power Button -&gt; Suspend">
+            <Event Name="X10.Power" />
+            <Action Name="Show XBMC OSD: Suspending system">
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n#eg.result = 23\neg.globals.MSG = u\'Suspending system\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+            </Action>
+            <Action Name="Show OSD: Suspending system">
+                EventGhost.ShowOSD(u'{eg.globals.MSG}', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+            <Action>
+                System.Standby(False)
+            </Action>
+        </Macro>
+        <Macro Name="Live TV -&gt; Turn TV on/off">
+            <Event Name="X10.ChannelSearch" />
+            <Action Enabled="False">
+                System.Execute(u'C:\\Program Files (x86)\\CyberLink\\PowerDVD11\\PDVDLaunchPolicy.exe', u'', 0, False, 2, u'', False)
+            </Action>
+            <Action Enabled="False">
+                System.Standby(False)
+            </Action>
+            <Action Name="HDMI_CEC_Turn_on_of">
+                EventGhost.PythonScript(u"import urllib\n\ntry:\n  hdmi_on_off = eg.globals.hdmi_on_off\nexcept:\n  hdmi_on_off = 'off'\n\n\nif hdmi_on_off == 'on':\n    hdmi_on_off = 'off'\nelse:\n    hdmi_on_off = 'on'\n\neg.globals.hdmi_on_off = hdmi_on_off\nserver = 'http://pi:5000/stream/%s'\nurl = server % hdmi_on_off\nprint url\nres = urllib.urlopen(url)\n")
+            </Action>
+        </Macro>
+        <Macro Name="Rec TV -&gt; Picassa slideshow">
+            <Event Name="X10.Snapshot" />
+            <Action>
+                System.StartScreenSaver()
+            </Action>
+        </Macro>
+        <Macro Name="Photo -&gt; Reset LCD display">
+            <Event Name="X10.Photo" />
+            <Action Name="Start Program: taskkill XbmcOniMon">
+                System.Execute(u'taskkill', u'/f /im XbmcOniMon.exe', 3, False, 2, u'', False)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.20000000000000001)
+            </Action>
+            <Action Name="Start Program: XbmcOniMon">
+                System.Execute(u'D:\\Software\\xbmc-on-imon-v0.1.9.5\\XbmcOniMon.exe', u'', 0, False, 2, u'', False)
+            </Action>
+        </Macro>
+        <Macro Name="Music -&gt; Music party mode">
+            <Event Name="Music" />
+            <Action Enabled="False">
+                SamsungCommunicator.PwrOff()
+            </Action>
+            <Action Name="Emulate Keystrokes: F12">
+                Window.SendKeys(u'{F2}', False)
+            </Action>
+        </Macro>
+        <Macro Name="Video -&gt; Start XBMC" Expanded="True">
+            <Event Name="X10.VCR" />
+            <Event Name="startup.xbmc" />
+            <Action Name="Start Program: JoyToKey" Enabled="False">
+                System.Execute(u'D:\\Software\\JoyToKey\\JoyToKey.exe', u'', 1, False, 2, u'', False)
+            </Action>
+            <Action>
+                System.Execute(u'D:\\Software\\XBMC-13.2-Gotham-RC1\\XBMC.exe', u'', 0, False, 2, u'', True)
+            </Action>
+            <Action Enabled="False">
+                Window.FindWindow(u'XbmcOniMon.exe', None, None, None, None, None, True, 0.0, 0)
+            </Action>
+            <Action Enabled="False">
+                Window.Close()
+            </Action>
+        </Macro>
+        <Macro Name="DVD Menu -&gt; HDMI Source" id="1885">
+            <Event Name="X10.DVD" />
+            <Action Enabled="False">
+                SamsungCommunicator.Source()
+            </Action>
+            <Action Name="HDMI_CEC_Source">
+                EventGhost.PythonScript(u"import urllib\n\ntry:\n  source = eg.globals.hdmi_source\nexcept:\n  source = None\n\nif not source:\n    source = 1\nelse:\n    source = source + 1\nif source &gt; 3:\n    source = 1\neg.globals.hdmi_source = source    \nserver = 'http://pi:5000/stream/source%d'\nurl = server % source\nprint url\nres = urllib.urlopen(url)\n")
+            </Action>
+        </Macro>
+        <Macro Name="Guide -&gt; Switch socket on/off">
+            <Event Name="X10.MTTrack" />
+            <Event Name="X10.VideoDesktop" />
+            <Action Enabled="False">
+                EventGhost.EnableExclusive(XmlIdLink(1185))
+            </Action>
+            <Action Enabled="False">
+                EventGhost.ShowOSD(u'Mouse mode', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+            <Action Name="Show XBMC OSD: Mouse mode" Enabled="False">
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Mouse mode\'\neg.globals.exclusive_mode = u\'Mouse\'\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+            </Action>
+            <Action Name="HDMI_CEC_Turn_socket_on_off">
+                EventGhost.PythonScript(u"import urllib\n\ntry:\n  hdmi_socket_on_off = eg.globals.hdmi_socket_on_off\nexcept:\n  hdmi_socket_on_off = 'off'\n\n\nif hdmi_socket_on_off == 'on':\n    hdmi_socket_on_off = 'off'\nelse:\n    hdmi_socket_on_off = 'on'\n\neg.globals.hdmi_socket_on_off = hdmi_socket_on_off\nserver = 'http://pi:5000/stream/lamp_%s'\nurl = server % hdmi_socket_on_off\nprint url\nres = urllib.urlopen(url)\n")
+            </Action>
+        </Macro>
+        <Macro Name="Text -&gt; Switch to next mode">
+            <Event Name="TXT" />
+            <Action Name="Switch to new mode">
+                EventGhost.PythonScript(u'eg.globals.modes_list = {u\'Mouse\'    :\'Activated.KEYBOARD\', \n                         u\'Keyboard\' :\'Activated.XBMC\', \n                         u\'XBMC\'     :\'Activated.NC_PLUS\', \n                         u\'NC_PLUS\'  :\'Activated.SAMSUNGTV\', \n                         u\'SamsungTV\':\'Activated.MOUSE\'}\neg.globals.MSG = eg.globals.modes_list.get(eg.globals.exclusive_mode,\'Activated.KEYBOARD\')\neg.log.PrintNotice(eg.globals.MSG)\neg.TriggerEvent(eg.globals.MSG, payload=None, prefix="Task")\n')
+            </Action>
+        </Macro>
+        <Macro Name="Increase Volume -&gt; Master Vol Up">
+            <Event Name="VolumeUp" />
+            <Action>
+                System.ChangeMasterVolumeBy(2.0)
+            </Action>
+            <Action Name="Store Volume in eg.globals.vol">
+                EventGhost.PythonScript(u'eg.globals.vol = eg.result\neg.globals.MSG = "Vol: " + str(round(eg.globals.vol)) + "%"\n')
+            </Action>
+            <Action>
+                EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+            </Action>
+            <Action Name="Show XBMC OSD: Volume x %" Enabled="False">
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n#eg.result = 23\neg.globals.MSG = u\'Volume %d %%\' % ( int(round(eg.result)))\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+            </Action>
+            <Action>
+                EventGhost.ShowOSD(u"Volume {'|'*int(round(eg.globals.vol))+'.'*(100-int(round(eg.globals.vol)))} {int(round(eg.globals.vol))}%", u'0;-43;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+            <Action>
+                EventGhost.AutoRepeat(0.20000000000000001, 0.10000000000000001, 0.01, 2.0)
+            </Action>
+        </Macro>
+        <Macro Name="Decrease Volume -&gt; Master Vol Down">
+            <Event Name="VolumeDown" />
+            <Action>
+                System.ChangeMasterVolumeBy(-2.0)
+            </Action>
+            <Action Name="Store Volume in eg.globals.vol">
+                EventGhost.PythonScript(u'eg.globals.vol = eg.result\neg.globals.MSG = "Vol: " + str(round(eg.globals.vol)) + "%"\n')
+            </Action>
+            <Action>
+                EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+            </Action>
+            <Action Name="Show XBMC OSD: Volume x %" Enabled="False">
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n#eg.result = 23\neg.globals.MSG = u\'Volume %d %%\' % ( int(round(eg.result)))\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\neg.log.PrintNotice("End")\n\n')
+            </Action>
+            <Action>
+                EventGhost.ShowOSD(u"Volume {'|'*int(round(eg.globals.vol))+'.'*(100-int(round(eg.globals.vol)))} {int(round(eg.globals.vol))}%", u'0;-43;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+            <Action>
+                EventGhost.AutoRepeat(0.20000000000000001, 0.10000000000000001, 0.01, 2.0)
+            </Action>
+        </Macro>
+        <Macro Name="Display Message on iMon">
+            <Event Name="Main.lcd_msg" Enabled="False" />
+            <Action Name="Start Program: taskkill XbmcOniMon">
+                System.Execute(u'taskkill', u'/f /im XbmcOniMon.exe', 3, False, 2, u'', False)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                iMON_Display.AcquireDisplay()
+            </Action>
+            <Action>
+                iMON_Display.DisplayText(10, u'{eg.globals.MSG}', '', 1, 8.0, 1.0, -1, -1.0, -1, True, 0, None, 60.0, None)
+            </Action>
+            <Action>
+                EventGhost.Wait(2.0)
+            </Action>
+            <Action>
+                iMON_Display.ReleaseDisplay()
+            </Action>
+            <Action Name="Start Program: XbmcOniMon">
+                System.Execute(u'D:\\Software\\xbmc-on-imon-v0.1.9.5\\XbmcOniMon.exe', u'', 0, False, 2, u'', False)
+            </Action>
+        </Macro>
+        <Macro Name="Mute Volume -&gt; Master Mute">
+            <Event Name="X10.Mute" />
+            <Action Enabled="False">
+                System.ToggleMute(0)
+            </Action>
+            <Action>
+                System.ToggleMute(0)
+            </Action>
+            <Action Name="Show XBMC OSD: Mute on/off">
+                EventGhost.PythonScript(u'#eg.WinApi.Clipboard.SetClipboardText("123")\neg.globals.MSG = u\'Mute %s\' % (("Off", "On")[eg.result])\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', eg.globals.MSG)\n')
+            </Action>
+            <Action>
+                EventGhost.ShowOSD(u'{eg.globals.MSG}', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+            <Action>
+                EventGhost.TriggerEvent(u'lcd_msg', 0.0)
+            </Action>
+        </Macro>
+        <Macro Name="Setup -&gt; Test">
+            <Action>
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n#eg.log.PrintNotice(eg.currentItem.parent.GetTypeName())\n\n#a,b = eg.currentItem.parent.parent.GetData()\n#eg.log.PrintNotice(a[0][1])\n\neg.TriggerEvent(\'Activated.XBMC\', payload=None, prefix="Task")\neg.result = "ok"\neg.log.PrintNotice("End")\n')
+            </Action>
+            <Action>
+                EventGhost.ShowOSD(u'{eg.result}', u'0;-120;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+        </Macro>
+        <Macro Name="Android -&gt; Notify XBMC">
+            <Event Name="Main.Android" />
+            <Event Name="Main.Android:" />
+            <Action>
+                EventGhost.PythonScript(u'reload(eg.sys)\neg.sys.setdefaultencoding( "utf-8" )\n\neg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n#eg.log.PrintNotice(eg.currentItem.parent.GetTypeName())\n\n#a,b = eg.currentItem.parent.parent.GetData()\n#eg.log.PrintNotice(a[0][1])\neg.globals.MSG = u"%s: %s" % (str(eg.event.payload[1]), str(eg.event.payload[2]))\neg.plugins.XBMC2.SendNotification(u\'Android\', eg.globals.MSG)\neg.result = "ok"\neg.log.PrintNotice("End")\n')
+            </Action>
+            <Action>
+                EventGhost.ShowOSD(u'{eg.globals.MSG}', u'0;-60;0;0;0;700;0;0;0;238;3;2;1;34;Arial', (255, 255, 255), (0, 0, 0), 1, (0, 0), 0, 3.0, False)
+            </Action>
+        </Macro>
+        <Macro Name="On XBMC Exit -&gt; shutdown XbmcOniMon">
+            <Event Name="System.Application.Terminated.XBMC" />
+            <Event Name="Task.ClosedWindow.XBMC" />
+            <Action Name="Start Program: taskkill JoyToKey.exe">
+                System.Execute(u'taskkill', u'/f /im JoyToKey.exe', 3, False, 2, u'', False)
+            </Action>
+            <Action Name="Start Program: taskkill XbmcOniMon">
+                System.Execute(u'taskkill', u'/f /im XbmcOniMon.exe', 3, False, 2, u'', False)
+            </Action>
+        </Macro>
+        <Macro Name="Special -&gt; Mode maping info" Expanded="True">
+            <Event Name="X10.Setup" />
+            <Action Name="Show XBMC OSD: Mode maping info" Enabled="False">
+                EventGhost.PythonScript(u'eg.log.PrintNotice("Start")\n#eg.WinApi.Clipboard.SetClipboardText("123")\n\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'Red-&gt;Ctx     Yellow-&gt;Esc \')\neg.Wait(2.0)\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'Blue-&gt;Menu   Green-&gt;NxtSubt.\')\neg.Wait(2.0)\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'5-&gt;SubtOff++ 6-&gt;SubtOff-- \')\neg.Wait(2.0)\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'8-&gt;Rating--  9-&gt;Rating++\')\neg.Wait(2.0)\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'*-&gt;DebugInfo #-&gt;FullScreen\')\neg.Wait(2.0)\neg.plugins.XBMC2.SendNotification(u\'EventGhost\', u\'Rec-&gt;Quit\')\neg.log.PrintNotice("End")\n\n')
+            </Action>
+            <Action>
+                ExportActiveContext.ParseContext(XmlIdLink(1031), XmlIdLink(1855))
+            </Action>
+            <Action Name="Start Program: draw_text.py">
+                System.Execute(u'c:\\Python26\\python.exe', u'd:\\Software\\EventGhost\\plugins\\ExportActiveContext\\draw_text.py', 3, True, 2, u'd:\\Software\\EventGhost\\plugins\\ExportActiveContext\\', False)
+            </Action>
+            <Action Name="Start Program: show image" Enabled="False">
+                System.Execute(u'd:\\Software\\Picasa3\\PicasaPhotoViewer.exe', u'"d:\\Software\\EventGhost\\plugins\\ExportActiveContext\\result.png"', 0, False, 2, u'', False)
+            </Action>
+            <Action Name="Emulate Keystrokes: F12">
+                Window.SendKeys(u'{F12}', False)
+            </Action>
+        </Macro>
+    </Folder>
+</EventGhost>

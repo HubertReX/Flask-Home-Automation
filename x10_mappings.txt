@@ -1,0 +1,58 @@
+'power': 'Power',
+'live_tv': 'ChannelSearch',
+'rec_tv': 'Snapshot',
+'photo': 'Photo',
+'music': 'Music',
+'dvd_menu': 'DVD',
+'video': 'VCR',
+
+'guide': 'MTTrack', # VideoDesktop
+'text': 'TXT', 
+
+'red': 'Red',
+'yellow': 'Yellow',
+'blue': 'Blue',
+'green': 'Green',
+
+'left': 'Left',
+'right': 'Right',
+'up': 'Up',
+'down': 'Down',
+'ok': 'Ok',
+
+'vol_u': 'VolumeUp',
+'vol_d': 'VolumeDown',
+'mute': 'Mute',
+
+'pr_p': 'ChannelUp',
+'pr_m': 'ChannelDown',
+
+'0': 'Num0',
+'1': 'Num1',
+'2': 'Num2',
+'3': 'Num3',
+'4': 'Num4',
+'5': 'Num5',
+'6': 'Num6',
+'7': 'Num7',
+'8': 'Num8',
+'9': 'Num9',
+
+'star': 'AcquireImage',
+'hash': 'EditImage',
+
+'back': 'Delete',
+'info': 'TVPreview',
+
+
+'special': 'Setup',
+'setup': 'Setup',
+
+'play': 'Play',
+'stop': 'Stop',
+'pause': 'Pause',
+'rewind': 'Rewind',
+'ff': 'Forward',
+'next': 'NextTrack',
+'prev': 'PreviousTrack',
+'rec': 'Record',

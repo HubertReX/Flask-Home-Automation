@@ -26,6 +26,8 @@ def run_cmd():
       script = path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
     elif cmd == 'NCPLUS':
       script = path % ("cmd-processor-NCPLUS.sh " + param)
+    elif cmd == 'X10':
+      script = path % ("cmd-processor-X10.sh " + param)
     elif cmd == 'WOL':
       script = path % ("cmd-processor-WOL.sh " + param)
     else:
@@ -49,6 +51,13 @@ def run_cmd():
 def index():
     return flask.render_template('index.html')
 
+@app.route('/ncplus')
+def ncplus():
+    return flask.render_template('ncplus.html')
+
+@app.route('/x10')
+def x10():
+    return flask.render_template('x10.html')
 
 @app.route( '/stream/<cmd>' )
 def stream(cmd):
