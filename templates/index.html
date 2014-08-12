@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block body %}
+<script type=text/javascript>
+  $(function() {
+    var submit_form = function(e) {
+      $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
+        fun: $('input[name="fun"]').val(),
+        param: $('input[name="param"]').val()
+      }, function(data) {
+        $('#result').text(data.result);
+        //$('input[name=fun]').focus().select();
+      });
+      return false;
+    };
+
+    var run_cmd = function(e) {
+      var data = e.data;
+      $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
+        fun: data.fun,
+        param: data.param
+      }, function(data) {
+        $('#result').text(data.result);
+        //$('input[name=fun]').focus().select();
+      });
+      return false;
+    };
+
+    $('a#tv_on').bind('click', {fun: 'on', param: ''}, run_cmd);
+    $('a#tv_off').bind('click', {fun: 'off', param: ''}, run_cmd);
+    $('a#lamp_on').bind('click', {fun: 'lamp_on', param: ''}, run_cmd);
+    $('a#lamp_off').bind('click', {fun: 'lamp_off', param: ''}, run_cmd);
+    $('a#source1').bind('click', {fun: 'source', param: '1'}, run_cmd);
+    $('a#source2').bind('click', {fun: 'source', param: '2'}, run_cmd);
+    $('a#source3').bind('click', {fun: 'source', param: '3'}, run_cmd);
+    $('a#ncplus_power').bind('click', {fun: 'ncplus', param: 'power'}, run_cmd);
+    $('a#ncplus_mute').bind('click', {fun: 'ncplus', param: 'mute'}, run_cmd);
+    $('a#ncplus_pr_p').bind('click', {fun: 'ncplus', param: 'pr_p'}, run_cmd);
+    $('a#ncplus_pr_m').bind('click', {fun: 'ncplus', param: 'pr_m'}, run_cmd);
+    $('a#ncplus_vol_p').bind('click', {fun: 'ncplus', param: 'vol_p'}, run_cmd);
+    $('a#ncplus_vol_m').bind('click', {fun: 'ncplus', param: 'vol_m'}, run_cmd);
+    $('a#ncplus_up').bind('click', {fun: 'ncplus', param: 'up'}, run_cmd);
+    $('a#ncplus_down').bind('click', {fun: 'ncplus', param: 'down'}, run_cmd);
+    $('a#ncplus_left').bind('click', {fun: 'ncplus', param: 'left'}, run_cmd);
+    $('a#ncplus_right').bind('click', {fun: 'ncplus', param: 'right'}, run_cmd);
+    $('a#ncplus_ok').bind('click', {fun: 'ncplus', param: 'ok'}, run_cmd);
+    $('a#ncplus_back').bind('click', {fun: 'ncplus', param: 'back'}, run_cmd);
+    
+
+    $('a#calculate').bind('click', submit_form);
+
+    $('input[type=text]').bind('keydown', function(e) {
+      if (e.keyCode == 13) {
+        submit_form(e);
+      }
+    });
+
+    //$('input[name=fun]').focus();
+  });
+</script>
+    <div class="wrapper">
+            <div class="grids">
+                  <div class="grid-10 grid">
+
+                    <h2>Wybierz opcję</h2>
+
+                    <p><a href=# id=tv_on  class="button">Włącz TV</a>&nbsp;&nbsp;<a href=# id=tv_off  class="button">Wyłącz TV</a>
+                    <br/>
+                    <a href=# id=source1  class="button">HDMI 1</a>&nbsp;&nbsp;<a href=# id=source2  class="button">HDMI 2</a>&nbsp;&nbsp;<a href=# id=source3  class="button">HDMI 3</a>
+                    <hr /> 		
+                    <p><a href=# id=ncplus_power  class="button">Włącz NC+</a>&nbsp;&nbsp;<a href=# id=ncplus_mute  class="button">Mute NC+</a>
+                    <br/>
+                    <a href=# id=ncplus_pr_p  class="button">Kanał +</a>&nbsp;<a href=# id=ncplus_pr_m class="button" >Kanał -</a>
+                    <a href=# id=ncplus_vol_p class="button">Głośność +</a>&nbsp;<a href=# id=ncplus_vol_m class="button" >Głośność -</a>
+                    <br/>
+                    <a href=# id=ncplus_up class="button">/\</a>&nbsp;<a href=# id=ncplus_down class="button" >\/</a>
+                    <br/>
+                    <a href=# id=ncplus_ok class="button">OK</a>&nbsp;<a href=# id=ncplus_back class="button" >BACK</a>
+                    <br/>
+                    <a href=# id=ncplus_left class="button">&lt;</a>&nbsp;<a href=# id=ncplus_right class="button" >&gt;</a>
+                    <hr /> 		
+                    <p><a href=# id=lamp_on  class="button">Włącz głośnik</a>&nbsp;&nbsp;<a href=# id=lamp_off  class="button">Wyłącz głośnik</a>
+
+                  </div><!--end of grid-10--> 
+            </div><!--end of grids-->
+    </div><!--end of wrapper-->
+<p>  Wynik:<br/>
+  <span id=result> </span><br/>
+
+  <input type=text size=5 name=fun> <br/>
+  <input type=text size=5 name=param> <br/>
+<p><a href=# id=calculate>Wykonaj</a>
+<br/>
+{% endblock %}

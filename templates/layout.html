@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><!-- use class="debug" here if you develope a template and want to check-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+   	<!-- some meta tags, important for SEO"--> 
+    <meta name="description" content="My Home automation sever" />
+    <meta name="keywords" content="automation server z-wave xbmc samsung" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="robots" content="index,follow" />
+
+	<title>Dobrzyki Serwer</title>
+<!--
+	<script type=text/javascript
+	  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
+
+            
+            <link rel="stylesheet" href="css/inuit.css" />
+            <link rel="stylesheet" href="css/fluid-grid16-1100px.css" />
+            <link rel="stylesheet" href="css/eve-styles.css" />
+            <link rel="shortcut icon" href="icon.png" />
+            <link rel="apple-touch-icon-precomposed" href="img/icon.png" />
+            
+            <script src="js/respond-min.js" type="text/javascript"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+            <script>window.jQuery || document.write('<script src="scripts/jquery164min.js">\x3C/script>')</script><!--local fallback for JQuery-->
+			<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+            <link rel="stylesheet" href="css/flexslider.css" />
+            
+            <script type="text/javascript">
+				  $(window).load(function() {
+					$('.flexslider').flexslider({
+						  animation: "slide",<!--you can also choose fade here-->
+						  directionNav: false,<!--Attention: if you choose true here, the nav-buttons will also appear in the ticker! -->
+						  keyboardNav: true,
+						  mousewheel: true
+					});
+				  });
+				</script>
+
+	<script type=text/javascript>
+	  var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	</script>
+</head>
+{% block body %}{% endblock %}
+
+</html>

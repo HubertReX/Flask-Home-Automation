@@ -1,0 +1,14 @@
+POST /upnpfun/ctrl/uuid_18d848f0-1dd2-11b2-bf00-000391e19ead/04 HTTP/1.1
+HOST: 192.168.1.105:8080
+SOAPACTION: "urn:adbglobal.com:service:X_ADB_RemoteControl:1#ProcessInputEvent"
+CONTENT-TYPE: text/xml; charset="utf-8"
+Content-Length: 376
+
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Body>
+      <u:ProcessInputEvent xmlns:u="urn:adbglobal.com:service:X_ADB_RemoteControl:1">
+         <InputEvent>ev=keydn,code=116</InputEvent>
+      </u:ProcessInputEvent>
+   </s:Body>
+</s:Envelope>
