@@ -44,9 +44,9 @@
     $('a#ncplus_right').bind('click', {fun: 'ncplus', param: 'right'}, run_cmd);
     $('a#ncplus_ok').bind('click', {fun: 'ncplus', param: 'ok'}, run_cmd);
     $('a#ncplus_back').bind('click', {fun: 'ncplus', param: 'back'}, run_cmd);
-    
+    $('a#wol_htpc').bind('click', {fun: 'wol', param: 'htpc'}, run_cmd);
 
-    $('a#calculate').bind('click', submit_form);
+    //$('a#calculate').bind('click', submit_form);
 
     $('input[type=text]').bind('keydown', function(e) {
       if (e.keyCode == 13) {
@@ -79,15 +79,18 @@
                     <a href=# id=ncplus_left class="button">&lt;</a>&nbsp;<a href=# id=ncplus_right class="button" >&gt;</a>
                     <hr /> 		
                     <p><a href=# id=lamp_on  class="button">Włącz głośnik</a>&nbsp;&nbsp;<a href=# id=lamp_off  class="button">Wyłącz głośnik</a>
+                    <hr />
+                    <p><a href=# id=wol_htpc class="button">Włącz HTPC</a>&nbsp;&nbsp;<a href=# id=htpc_suspend  class="button">Wyłącz HTPC</a>
 
                   </div><!--end of grid-10--> 
             </div><!--end of grids-->
     </div><!--end of wrapper-->
 <p>  Wynik:<br/>
   <span id=result> </span><br/>
-
+<!--
   <input type=text size=5 name=fun> <br/>
   <input type=text size=5 name=param> <br/>
 <p><a href=# id=calculate>Wykonaj</a>
+-->
 <br/>
 {% endblock %}

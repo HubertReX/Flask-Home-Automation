@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
 import flask
+from flask.ext.assets import Environment, Bundle
 
 from shelljob import proc
 import send_key2ncplus
+import wol
 
+app = flask.Flask(__name__, static_folder='static', static_url_path='')
+#assets = Environment(app)
 
-app = flask.Flask(__name__)
+#js = Bundle('respond-min.js', 'jquery.flexslider-min.js', 'jquery.formalize.min.js', 'jquery164min.js',
+#            filters='jsmin', output='js/packed.js')
+#css = Bundle ('eve-styles.css', 'fluid-grid16-1100px.css', 'flexslider.css', 'inuit.css', 'formalize.css', 'breadcrumb.inuit.css', 'dropdown.inuit.css',
+#            filers='cssmin', output='css/common.css')
+
+#assets.register('js_all', js)
+#assets.register('css_all', css)
 
 @app.route('/_run_cmd')
 def run_cmd():
@@ -33,6 +43,9 @@ def run_cmd():
     elif cmd == 'ncplus':
       res = send_key2ncplus.send_key(param)
       script = "echo '%s'" % res
+    elif cmd == 'wol':
+      res = wol.WakeOnLan('192.168.1.100','f4:6d:4:93:11:82')
+      script =  "echo '%s'" % res
     else:
       script = "echo 'Unknown command - check syntax'"
     p = g.run(["bash", "-c", script])

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import os, sys, urllib2
-# http://forum.fibaro.com/viewtopic.php?t=1741&postdays=0&postorder=asc&start=0
-# use Device Spy from Developer Tools for UPnP to get UUID
 
 HOST = "192.168.1.105"
 PORT = 8080
@@ -139,12 +137,12 @@ def send_soap(status, key):
     req.add_header("SOAPACTION", '"urn:adbglobal.com:service:X_ADB_RemoteControl:1#ProcessInputEvent"');
     req.add_header('Content-type', 'application/xml');
     res = urllib2.urlopen(req).read();
-    #print res
+    print res
 
 def send_key(key):
-    #print key
+    print key
     k =keys.get(key.upper(),-1)
-    #print k
+    print k
     send_soap("keydn", k)
     send_soap("keyup", k)
   
