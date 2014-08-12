@@ -3,51 +3,34 @@ import flask
 from flask.ext.assets import Environment, Bundle
 
 from shelljob import proc
-import send_key2ncplus
-import wol
+#import send_key2ncplus
+#import wol
 
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
-#assets = Environment(app)
-
-#js = Bundle('respond-min.js', 'jquery.flexslider-min.js', 'jquery.formalize.min.js', 'jquery164min.js',
-#            filters='jsmin', output='js/packed.js')
-#css = Bundle ('eve-styles.css', 'fluid-grid16-1100px.css', 'flexslider.css', 'inuit.css', 'formalize.css', 'breadcrumb.inuit.css', 'dropdown.inuit.css',
-#            filers='cssmin', output='css/common.css')
-
-#assets.register('js_all', js)
-#assets.register('css_all', css)
 
 @app.route('/_run_cmd')
 def run_cmd():
+    # example call: http://pi:5000/_run_cmd?fun=ncplus&param=info
+    # example call: http://pi:5000/_run_cmd?fun=ZWAVE&param=speakers&val=on
     
-    cmd = flask.request.args.get('fun', 0, type=str)
+    cmd   = flask.request.args.get('fun',   0, type=str)
     param = flask.request.args.get('param', 0, type=str)
+    val   = flask.request.args.get('val',   0, type=str)
 
     g = proc.Group()
-    #p = g.run( [ "bash", "-c", "for ((i=0;i<100;i=i+1)); do echo $i; sleep 1; done" ] )
+
     path = "/home/pi/flask/%s"
-    if cmd == 'on':
-      script = path % "turn-tv-on.sh"
-    elif cmd == 'off':
-      script = path % "turn-tv-off.sh"
-    elif cmd == 'source':
-      script = path % ("switch-to-hdmiN.sh " + param)
-    elif cmd == 'source2':
-      script = path % "switch-to-hdmiN.sh 2"
-    elif cmd == 'source3':
-      script = path % "switch-to-hdmiN.sh 3"
-    elif cmd == 'lamp_on':
-      script = path % "../azw/turn_on.sh"
-    elif cmd == 'lamp_off':
-      script = path % "../azw/turn_off.sh"
-    elif cmd == 'ncplus':
-      res = send_key2ncplus.send_key(param)
-      script = "echo '%s'" % res
-    elif cmd == 'wol':
-      res = wol.WakeOnLan('192.168.1.100','f4:6d:4:93:11:82')
-      script =  "echo '%s'" % res
+    if cmd == 'TV':
+      script = path % ("cmd-processor-TV.sh " + param)
+    elif cmd == 'ZWAVE':
+      script = path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
+    elif cmd == 'NCPLUS':
+      script = path % ("cmd-processor-NCPLUS.sh " + param)
+    elif cmd == 'WOL':
+      script = path % ("cmd-processor-WOL.sh " + param)
     else:
-      script = "echo 'Unknown command - check syntax'"
+      script = "echo 'Unknown command - check syntax: %s %s'" % (cmd, param)
+    
     p = g.run(["bash", "-c", script])
 
     response = ""
@@ -69,10 +52,9 @@ def index():
 
 @app.route( '/stream/<cmd>' )
 def stream(cmd):
-    #print "<a href='stream/on'>turn on</a>"
-    print "start"
+    #depricated - use index.html instead!
     g = proc.Group()
-    #p = g.run( [ "bash", "-c", "for ((i=0;i<100;i=i+1)); do echo $i; sleep 1; done" ] )
+
     path = "/home/pi/flask/%s"
     if cmd == 'on':
       script = path % "turn-tv-on.sh"
@@ -93,14 +75,6 @@ def stream(cmd):
     p = g.run(["bash", "-c", script])
 
     def read_process():
-        yield "List of available commands:<br/>"
-        yield "<a href='/stream/on' >turn on</a><br/>"
-        yield "<a href='/stream/off'>turn off</a><br/>"
-        yield "<a href='/stream/source1'>HDMI source 1</a><br/>"
-        yield "<a href='/stream/source2'>HDMI source 2</a><br/>"
-        yield "<a href='/stream/source3'>HDMI source 3</a><br/>"
-        yield "<a href='/stream/lamp_on'>Turn Socket on</a><br/>"
-        yield "<a href='/stream/lamp_off'>Turn Socket off</a><br/>"
         yield "Current response:<p>"
         while g.is_pending():
             lines = g.readlines()
