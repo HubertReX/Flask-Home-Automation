@@ -3,8 +3,9 @@ import flask
 from flask.ext.assets import Environment, Bundle
 
 from shelljob import proc
-#import send_key2ncplus
-#import wol
+import send_key2ncplus
+import send_x10_to_htpc
+import wol
 
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
 
@@ -25,26 +26,30 @@ def run_cmd():
     elif cmd == 'ZWAVE':
       script = path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
     elif cmd == 'NCPLUS':
-      script = path % ("cmd-processor-NCPLUS.sh " + param)
+      script = "" # path % ("cmd-processor-NCPLUS.sh " + param)
+      rresultses = send_key2ncplus.send_key(param)
     elif cmd == 'X10':
-      script = path % ("cmd-processor-X10.sh " + param)
+      script = "" #path % ("cmd-processor-X10.sh " + param)
+      results = send_x10_to_htpc.send_x10_cmd(param)
     elif cmd == 'WOL':
-      script = path % ("cmd-processor-WOL.sh " + param)
+      script = "" # path % ("cmd-processor-WOL.sh " + param)
+      results = wol.main(param)
     else:
       script = "echo 'Unknown command - check syntax: %s %s'" % (cmd, param)
     
-    p = g.run(["bash", "-c", script])
+    if script != "":
+      p = g.run(["bash", "-c", script])
 
-    response = ""
-    def read_process():
-        response = ""
-        while g.is_pending():
-            lines = g.readlines()
-            for proc, line in lines:
-                response = response + line
-        return response
+      response = ""
+      def read_process():
+          response = ""
+          while g.is_pending():
+              lines = g.readlines()
+              for proc, line in lines:
+                  response = response + line
+          return response
 
-    results = read_process()
+      results = read_process()
     return flask.jsonify(result=results.replace("\n",""))
 
 @app.route('/')
@@ -55,9 +60,9 @@ def index():
 def ncplus():
     return flask.render_template('ncplus.html')
 
-@app.route('/x10')
+@app.route('/htpc')
 def x10():
-    return flask.render_template('x10.html')
+    return flask.render_template('htpc.html')
 
 @app.route( '/stream/<cmd>' )
 def stream(cmd):

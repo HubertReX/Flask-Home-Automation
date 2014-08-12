@@ -39,12 +39,15 @@ def WakeOnLan(ip, ethernet_address):
 # WakeOnLan('192.168.2.101','f4:6d:4:93:11:82') # HTPC
 # WakeOnLan('192.168.1.15','64:66:b3:0f:c5:b6') # RPi
 
+def main(param):
+  if param in SERVERS.keys():
+    ip, mac = SERVERS[param]
+    WakeOnLan(ip, mac)
+  else:
+    exit(1)
+
 if __name__ == "__main__":
   if len(sys.argv) == 1:
     exit(1)
 
-  if sys.argv[1] in SERVERS.keys():
-    ip, mac = SERVERS[sys.argv[1]]
-    WakeOnLan(ip, mac)
-  else:
-    exit(1)
+    main(sys.argv[1])

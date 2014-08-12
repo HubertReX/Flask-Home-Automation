@@ -43,6 +43,49 @@
 	  var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 	</script>
 </head>
-{% block body %}{% endblock %}
+<body>
+<script type=text/javascript>
+  $(function() {
 
+    var run_cmd_this = function(e) {
+      var data = "";
+      var mfun ="";
+      var mparam = "";
+      var mval = "";
+      
+      if (this.id.indexOf("_") > 0) {
+          mfun   = this.id.substr(0, this.id.indexOf("_")).toUpperCase()
+          mparam = this.id.substr(this.id.indexOf("_")+1, this.id.length)
+          if (mparam.indexOf("-") > 0) {
+            mval = mparam.substr(mparam.indexOf("-")+1, mparam.length)
+            mparam = mparam.substr(0, mparam.indexOf("-") )
+          }
+
+          $.getJSON($SCRIPT_ROOT + '/_run_cmd', {
+            fun: mfun,
+            param: mparam,
+            val: mval
+          }, function(data) {
+            $('#result').text(data.result);
+            //$('input[name=fun]').focus().select();
+          });
+          return false;
+      } else {
+          return true;
+      }
+    };
+    
+    $('a').bind('click', {}, run_cmd_this);
+  });
+</script>
+    <div class="wrapper">
+                    <ul id="nav" class="main">
+                        <li><a href="/" class="active">Start</a></li>
+                        <li><a href="ncplus">NC+</a></li>
+                		<li><a href="htpc">HTPC</a></li>
+                        <li><a href="#">Z-Wave</a></li>
+                    </ul>
+    </div><!--end of wrapper-->
+{% block body %}{% endblock %}
+</body>
 </html>
