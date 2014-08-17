@@ -1,0 +1,60 @@
+<!-- This file contains the mapping of LIRC keys to XBMC keys used in Keymap.xml  -->
+<!--                                                                              -->
+<!-- How to add remotes                                                           -->
+<!-- <remote device="name_Lirc_calls_the_remote">                                 -->
+<!--                                                                              -->
+<!-- For the commands the layout following layout is used                         -->
+<!-- <XBMC_COMMAND>LircButtonName</XBMC_COMMAND>                                  -->
+<!--                                                                              -->
+<!-- For a list of XBMC_COMMAND's check out the <remote> sections of keymap.xml   -->
+
+<lircmap>
+	<remote device="devinput">
+	   <obc1>KEY_SEARCH</obc1>
+	   <obc2>KEY_SCREEN</obc2>
+	   <obc3>photo</obc3> <!-- FEHLT -->
+	   <obc4>music</obc4> <!-- FEHLT -->
+	   <obc5>KEY_DVD</obc5>
+	   <obc6>video</obc6> <!-- FEHLT -->
+	   <obc7>KEY_RED</obc7>
+	   <obc8>KEY_YELLOW</obc8>
+	   <obc9>KEY_BLUE</obc9>
+	   <obc10>KEY_GREEN</obc10>
+	   <obc11>KEY_UP</obc11>
+	   <obc12>KEY_DOWN</obc12>
+	   <obc13>KEY_LEFT</obc13>
+	   <obc14>KEY_RIGHT</obc14>
+	   <obc15>KEY_OK</obc15>
+	   <obc16>KEY_NUMERIC_1</obc16>
+	   <obc17>KEY_NUMERIC_2</obc17>
+	   <obc18>KEY_NUMERIC_3</obc18>
+	   <obc19>KEY_NUMERIC_4</obc19>
+	   <obc20>KEY_NUMERIC_5</obc20>
+	   <obc21>KEY_NUMERIC_6</obc21>
+	   <obc22>KEY_NUMERIC_7</obc22>
+	   <obc23>KEY_NUMERIC_8</obc23>
+	   <obc24>KEY_NUMERIC_9</obc24>
+	   <obc25>KEY_NUMERIC_0</obc25>
+	   <obc26>KEY_SELECT</obc26>
+	   <obc27>KEY_EDIT</obc27>
+	   <obc28>KEY_SETUP</obc28>
+	   <obc29>KEY_REWIND</obc29>
+	   <obc30>KEY_PLAY</obc30>
+	   <obc31>KEY_FORWARD</obc31>
+	   <obc32>KEY_PAUSE</obc32>
+	   <obc33>KEY_PREVIOUS</obc33>
+	   <obc34>KEY_NEXT</obc34>
+	   <obc35>KEY_STOP</obc35>
+	   <obc36>KEY_RECORD</obc36>
+	   <obc37>KEY_POWER</obc37>
+	   <obc38>KEY_VIDEO</obc38>
+	   <obc39>KEY_TEXT</obc39>
+	   <obc40>KEY_VOLUMEDOWN</obc40> <!-- VERTAUSCHT -->
+	   <obc41>KEY_VOLUMEUP</obc41> <!-- VERTAUSCHT -->
+	   <obc42>KEY_MUTE</obc42>
+	   <obc43>KEY_CHANNELUP</obc43>
+	   <obc44>KEY_CHANNELDOWN</obc44>
+	   <obc45>KEY_DELETE</obc45>
+	   <obc46>KEY_VIDEO</obc46>
+	</remote>
+</lircmap>

@@ -6,6 +6,7 @@ from shelljob import proc
 import send_key2ncplus
 import send_x10_to_htpc
 import wol
+import zwave
 
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
 
@@ -24,7 +25,8 @@ def run_cmd():
     if cmd == 'TV':
       script = path % ("cmd-processor-TV.sh " + param)
     elif cmd == 'ZWAVE':
-      script = path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
+      script = "" # path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
+      results = zwave.agocontrol_send_cmd(param, val)
     elif cmd == 'NCPLUS':
       script = "" # path % ("cmd-processor-NCPLUS.sh " + param)
       rresultses = send_key2ncplus.send_key(param)
