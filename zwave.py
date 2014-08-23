@@ -2,7 +2,8 @@ import sys, json, urllib2, datetime
 
 URL = "http://192.168.1.110:8008/jsonrpc"
 UUIDS = {
-  "speakers" : "af088742-c0a3-473f-a5e8-7bd59d735585",
+  "speakers"   : "af088742-c0a3-473f-a5e8-7bd59d735585",
+  "roller"     : "e59f07f9-50d5-4a5f-b723-2aba695f46aa",
   "controller" : "c4a10ff0-6d7e-4630-ae4b-c0cd6e0af117",
   }
 
@@ -34,7 +35,8 @@ def agocontrol_send_cmd(param, val):
         },
         "id": 1
       }
-    if param == "speakers":
+    if param in UUIDS.keys():
+      print param
       uuid = UUIDS[param]
       msg["params"]["content"]["uuid"] = uuid
       msg["params"]["content"]["command"] = val      

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="wrapper">
+            <div class="grids">
+                  <div class="grid-10 grid">
+
+                    <h2>DOM</h2> 
+                    <p><a href=# id=ZWAVE_roller-on  class="button">Odsłoń roletę</a>&nbsp;&nbsp;<a href=# id=ZWAVE_roller-off  class="button">Zasłoń roletę</a>
+                    <br/>
+                  </div><!--end of grid-10--> 
+            </div><!--end of grids-->
+    </div><!--end of wrapper-->
+     <div class="wrapper">   
+                 <div class="grids">
+                  <div class="grid-3 grid"> 
+                    <p><a href=# id=x10_pr_p class="button">XBMC Głoś. +</a>
+                       <br/>
+                       <a href=# id=x10_pr_m class="button">XBMC Głoś. -</a></p>
+                  </div><!--end of grid-3--> 
+                    <p><a href=# id=x10_vol_u class="button">Win Głoś. +</a>
+                        <br/>
+                        <a href=# id=x10_vol_d class="button">Win Głoś. -</a></p>
+                  <div class="grid-3 grid"> 
+
+                  </div><!--end of grid-3--> 
+            </div><!--end of grids-->
+    </div><!--end of wrapper-->
+<p>  Wynik:<br/>
+  <span id=result> </span><br/>
+<br/>
+{% endblock %}

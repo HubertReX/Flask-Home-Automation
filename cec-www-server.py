@@ -62,6 +62,10 @@ def index():
 def ncplus():
     return flask.render_template('ncplus.html')
 
+@app.route('/zwave')
+def myzwave():
+    return flask.render_template('zwave.html')
+
 @app.route('/htpc')
 def x10():
     return flask.render_template('htpc.html')

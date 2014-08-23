@@ -30,6 +30,14 @@
             
             <script type="text/javascript">
 				  $(window).load(function() {
+                  /*
+                    $('#nav').each(function () {
+                          var $this = $(this);
+                          var tmp = ""
+                          
+                          $('#result').text($this.child('li').val());
+                    })
+                    */
 					$('.flexslider').flexslider({
 						  animation: "slide",<!--you can also choose fade here-->
 						  directionNav: false,<!--Attention: if you choose true here, the nav-buttons will also appear in the ticker! -->
@@ -82,8 +90,8 @@
                     <ul id="nav" class="main">
                         <li><a href="/" class="active">Start</a></li>
                         <li><a href="ncplus">NC+</a></li>
-                		<li><a href="htpc">HTPC</a></li>
-                        <li><a href="#">Z-Wave</a></li>
+                		<li><a href="htpc">Media</a></li>
+                        <li><a href="zwave">DOM</a></li>
                     </ul>
     </div><!--end of wrapper-->
 {% block body %}{% endblock %}
