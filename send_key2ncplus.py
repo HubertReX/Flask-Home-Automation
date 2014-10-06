@@ -78,7 +78,11 @@ def send_soap(status, key):
     req = urllib2.Request(url, msg);
     req.add_header("SOAPACTION", '"urn:adbglobal.com:service:X_ADB_RemoteControl:1#ProcessInputEvent"');
     req.add_header('Content-type', 'application/xml');
-    res = urllib2.urlopen(req, timeout=1).read();
+    res = None
+    try:
+      res = urllib2.urlopen(req, timeout=1).read();
+    except:
+      res = "connection error"
     #print res
 
 def send_key(key):

@@ -7,9 +7,9 @@ fi
 screen -S cec-client -p 0 -X stuff "as^M"
 screen -S cec-client -p 0 -X stuff "p 0 $1^M"
 
-if [[ $? == 0 ]] ; then
-    echo "ok"
-fi
+#if [[ $? == 0 ]] ; then
+#    echo "ok"
+#fi
 
 
 

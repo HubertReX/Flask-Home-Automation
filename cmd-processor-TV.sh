@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 == "" ]] ; then
-    echo "missing parameter: $0 on"
+    echo "missing parameter: $0 command"
     exit 1
 fi
 
@@ -15,7 +15,8 @@ fi
 if [[ $1 == "power" ]] ; then
   res=`/home/pi/flask/get-tv-status.sh`
   if [ -z "${res}" ]; then
-    echo "ERROR"
+    echo "tv power status unknown"
+    exit 1
   elif [ "x${res}" = "xon" ]; then
     /home/pi/flask/turn-tv-off.sh
   else

@@ -40,14 +40,26 @@ def WakeOnLan(ip, ethernet_address):
 # WakeOnLan('192.168.1.15','64:66:b3:0f:c5:b6') # RPi
 
 def main(param):
+  res = ''
+  param = param.upper()
   if param in SERVERS.keys():
     ip, mac = SERVERS[param]
-    WakeOnLan(ip, mac)
+    try:
+      WakeOnLan(ip, mac)
+      res = 'ok'
+    except:
+      res = 'error sending wol packet'
   else:
-    exit(1)
+    res = 'unknown device name'
+  return res
 
 if __name__ == "__main__":
   if len(sys.argv) == 1:
     exit(1)
 
-    main(sys.argv[1])
+    res = main(sys.argv[1])
+    print res
+    if res == 'ok':
+      exit(0)
+    else:
+      exit(1)
