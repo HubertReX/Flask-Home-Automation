@@ -8,6 +8,7 @@ import send_key2ncplus
 import send_x10_to_htpc
 import wol
 import zwave
+from OpenSSL import SSL
 
 PIPE_NAME = '/home/pi/flask/jasper_pipe_mic'
 if not os.path.exists(PIPE_NAME):
@@ -16,6 +17,11 @@ if not os.path.exists(PIPE_NAME):
 
 class PolishRequest(flask.Request):
      url_charset = 'utf-8'
+
+
+context = SSL.Context(SSL.SSLv23_METHOD)
+context.use_privatekey_file('/home/pi/hn_startssl.key')
+context.use_certificate_file('/home/pi/hn_startssl.cer')
 
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
 app.request_class = PolishRequest
@@ -76,8 +82,8 @@ def voice_cmd():
     try:
         cmd = flask.request.args['cmd']
         print cmd
-        #if isinstance(cmd, unicode):
-        #    cmd = cmd.decode('utf-8')
+        if isinstance(cmd, unicode):
+            cmd = cmd.encode('utf-8')
         print cmd
         pipeout = os.open(PIPE_NAME, os.O_WRONLY|os.O_NONBLOCK)
         print "opened"
@@ -148,5 +154,5 @@ def stream(cmd):
     return flask.Response( read_process() , mimetype= 'text/html' )
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=443, ssl_context=context)
 
