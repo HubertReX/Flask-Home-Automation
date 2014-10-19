@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Voice commands</title>
+<html lang="pl"><!-- use class="debug" here if you develope a template and want to check-->
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Voice commands</title>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
 
 <style>
@@ -82,6 +84,8 @@
     padding: 0;
   }
 </style>
+</head>
+<body>
 <h1 class="center" id="headline">
   Podaj komendę</h1>
 <div id="info">
@@ -205,7 +209,7 @@ var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 
 function voice_cmd(cmd) {
       var data = "";
-      
+      $.ajaxSetup({ contentType: "application/json; charset=utf-8"});
       $.getJSON($SCRIPT_ROOT + '/_voice_cmd', {
         cmd: cmd,
         lang: select_language.selectedIndex
@@ -258,8 +262,8 @@ function Sound(source,volume,loop)
 
 $( document ).ready(function() {
     console.log( "ready!" );
-    t = ttsSound("Witaj! Serwer jest gotowy");
-    t.start();
+    //t = ttsSound("Witaj! Serwer jest gotowy");
+    //t.start();
 });
 for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
@@ -303,8 +307,8 @@ if (!('webkitSpeechRecognition' in window)) {
 } else {
   start_button.style.display = 'inline-block';
   var recognition = new webkitSpeechRecognition();
-  recognition.continuous = true;
-  recognition.interimResults = true;
+  recognition.continuous = false;
+  recognition.interimResults = false;
 
   recognition.onstart = function() {
     recognizing = true;
@@ -363,13 +367,20 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.onresult = function(event) {
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
+        var result = event.results[i];
+        console.log('result[i] = ' + result[0].transcript);
+        console.log('confidence = ' + result[0].confidence);
+        console.log('is final ? ' + result.isFinal);
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
     }
-    voice_cmd(final_transcript)
+    if (final_transcript) {
+        voice_cmd(final_transcript)  
+    }
+    
     final_transcript = capitalize(final_transcript);
     final_span.innerHTML = linebreak(final_transcript);
     interim_span.innerHTML = linebreak(interim_transcript);
@@ -434,7 +445,7 @@ function startButton(event) {
     return;
   }
   final_transcript = '';
-  recognition.lang = select_dialect.value;
+  recognition.lang = 'pl-PL'; //select_dialect.value;
   recognition.start();
   ignore_onend = false;
   final_span.innerHTML = '';
@@ -470,3 +481,5 @@ function showButtons(style) {
   email_info.style.display = 'none';
 }
 </script>
+</body>
+</html>

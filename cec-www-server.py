@@ -3,21 +3,32 @@ import flask
 from flask.ext.assets import Environment, Bundle
 
 from shelljob import proc
+import os
 import send_key2ncplus
 import send_x10_to_htpc
 import wol
 import zwave
 
+PIPE_NAME = '/home/pi/flask/jasper_pipe_mic'
+if not os.path.exists(PIPE_NAME):
+    os.mkfifo(PIPE_NAME)
+
+
+class PolishRequest(flask.Request):
+     url_charset = 'utf-8'
+
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
+app.request_class = PolishRequest
+app.url_map.charset = 'utf-8'
 
 @app.route('/_run_cmd')
 def run_cmd():
     # example call: http://pi:5000/_run_cmd?fun=ncplus&param=info
     # example call: http://pi:5000/_run_cmd?fun=ZWAVE&param=speakers&val=on
     
-    cmd   = flask.request.args.get('fun',   0, type=str)
-    param = flask.request.args.get('param', 0, type=str)
-    val   = flask.request.args.get('val',   0, type=str)
+    cmd   = flask.request.args.get('fun',   "", type=str)
+    param = flask.request.args.get('param', "", type=str)
+    val   = flask.request.args.get('val',   "", type=str)
 
     g = proc.Group()
 
@@ -29,7 +40,7 @@ def run_cmd():
       results = zwave.agocontrol_send_cmd(param, val)
     elif cmd == 'NCPLUS':
       script = "" # path % ("cmd-processor-NCPLUS.sh " + param)
-      rresultses = send_key2ncplus.send_key(param)
+      results = send_key2ncplus.send_key(param)
     elif cmd == 'X10':
       script = "" #path % ("cmd-processor-X10.sh " + param)
       results = send_x10_to_htpc.send_x10_cmd(param)
@@ -55,47 +66,27 @@ def run_cmd():
     return flask.jsonify(result=results.replace("\n",""))
 
 @app.route('/_voice_cmd')
-def run_cmd():
-    # example call: http://pi:5000/_voice_cmd?cmd=test&lang=18
-    # example call: http://pi:5000/_run_cmd?fun=&param=speakers&val=on
-    
-    cmd   = flask.request.args.get('fun',   0, type=str)
-    param = flask.request.args.get('param', 0, type=str)
-    val   = flask.request.args.get('val',   0, type=str)
+def voice_cmd():
+    #for arg in flask.request.args:
+    #    print repr(flask.request.args[arg])
+    #flask.request.args.get('cmd',  "error", type=str)
 
-    g = proc.Group()
-
-    path = "/home/pi/flask/%s"
-    if cmd == 'TV':
-      script = path % ("cmd-processor-TV.sh " + param)
-    elif cmd == 'ZWAVE':
-      script = "" # path % ("cmd-processor-Z-Wave.sh " + param + " " + val)
-      results = zwave.agocontrol_send_cmd(param, val)
-    elif cmd == 'NCPLUS':
-      script = "" # path % ("cmd-processor-NCPLUS.sh " + param)
-      rresultses = send_key2ncplus.send_key(param)
-    elif cmd == 'X10':
-      script = "" #path % ("cmd-processor-X10.sh " + param)
-      results = send_x10_to_htpc.send_x10_cmd(param)
-    elif cmd == 'WOL':
-      script = "" # path % ("cmd-processor-WOL.sh " + param)
-      results = wol.main(param)
-    else:
-      script = "echo 'Unknown command - check syntax: %s %s'" % (cmd, param)
-    
-    if script != "":
-      p = g.run(["bash", "-c", script])
-
-      response = ""
-      def read_process():
-          response = ""
-          while g.is_pending():
-              lines = g.readlines()
-              for proc, line in lines:
-                  response = response + line
-          return response
-
-      results = read_process()
+    #print "got cmd %s" % repr(cmd)
+    results = "ok"
+    try:
+        cmd = flask.request.args['cmd']
+        print cmd
+        #if isinstance(cmd, unicode):
+        #    cmd = cmd.decode('utf-8')
+        print cmd
+        pipeout = os.open(PIPE_NAME, os.O_WRONLY|os.O_NONBLOCK)
+        print "opened"
+        os.write(pipeout, "%s\n" % cmd)
+        print "write"
+        os.close(pipeout)
+    except Exception, e:
+        print "error using named pipe: %s" % repr(e)
+        results = "error"
     return flask.jsonify(result=results.replace("\n",""))
 
 @app.route('/')
@@ -117,6 +108,10 @@ def x10():
 @app.route('/speech')
 def speech():
     return flask.render_template('webspeechdemo.html')
+
+@app.route('/voice')
+def voice():
+    return flask.render_template('voice_commands.html')
 
 @app.route( '/stream/<cmd>' )
 def stream(cmd):
