@@ -4,8 +4,10 @@ if [[ $1 == "" ]] ; then
     exit 1
 fi
 
-screen -S cec-client -p 0 -X stuff "as^M"
-screen -S cec-client -p 0 -X stuff "p 0 $1^M"
+screen -S cec-client -p 0 -X stuff "as
+"
+screen -S cec-client -p 0 -X stuff "p 0 $1
+"
 
 #if [[ $? == 0 ]] ; then
 #    echo "ok"

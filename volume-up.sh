@@ -1,5 +1,8 @@
 #!/bin/bash
-screen -S cec-client -p 0 -X stuff "standby 0^M"
+sudo screen -S cec-client -p 0 -X stuff "tx 40:44:41
+"
+sudo screen -S cec-client -p 0 -X stuff "tx 40:8b:41
+"
 
 
 

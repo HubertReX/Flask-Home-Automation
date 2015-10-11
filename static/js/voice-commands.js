@@ -1,145 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"><!-- use class="debug" here if you develope a template and want to check-->
-    <meta charset="utf-8">
-    <title>Voice commands</title>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-
-<style>
-  * {
-    font-family: Verdana, Arial, sans-serif;
-  }
-  a:link {
-    color:#000;
-    text-decoration: none;
-  }
-  a:visited {
-    color:#000;
-  }
-  a:hover {
-    color:#33F;
-  }
-  .button {
-    background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
-    border: 1px solid #076bd2;
-    border-radius: 3px;
-    color: #fff;
-    display: none;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.3;
-    padding: 8px 25px;
-    text-align: center;
-    text-shadow: 1px 1px 1px #076bd2;
-    letter-spacing: normal;
-  }
-  .center {
-    padding: 10px;
-    text-align: center;
-  }
-  .final {
-    color: black;
-    padding-right: 3px; 
-  }
-  .interim {
-    color: gray;
-  }
-  .info {
-    font-size: 14px;
-    text-align: center;
-    color: #777;
-    display: none;
-  }
-  .right {
-    float: right;
-  }
-  .sidebyside {
-    display: inline-block;
-    width: 45%;
-    min-height: 40px;
-    text-align: left;
-    vertical-align: top;
-  }
-  #headline {
-    font-size: 40px;
-    font-weight: 300;
-  }
-  #info {
-    font-size: 20px;
-    text-align: center;
-    color: #777;
-    visibility: hidden;
-  }
-  #results {
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-    min-height: 150px;
-  }
-  #start_button {
-    border: 0;
-    background-color:transparent;
-    padding: 0;
-  }
-</style>
-</head>
-<body>
-<h1 class="center" id="headline">
-  Podaj komendę</h1>
-<div id="info">
-  <p id="info_start">Kliknij na ikonę mikrofonu i zacznij mówić</p>
-  <p id="info_speak_now">Speak now.</p>
-  <p id="info_no_speech">No speech was detected. You may need to adjust your
-    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-      microphone settings</a>.</p>
-  <p id="info_no_microphone" style="display:none">
-    No microphone was found. Ensure that a microphone is installed and that
-    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-    microphone settings</a> are configured correctly.</p>
-  <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
-  <p id="info_denied">Permission to use microphone was denied.</p>
-  <p id="info_blocked">Permission to use microphone is blocked. To change,
-    go to chrome://settings/contentExceptions#media-stream</p>
-  <p id="info_upgrade">Web Speech API is not supported by this browser.
-     Upgrade to <a href="//www.google.com/chrome">Chrome</a>
-     version 25 or later.</p>
-</div>
-<div class="right">
-  <button id="start_button" onclick="startButton(event)">
-    <img id="start_img" src="img/mic.gif" alt="Start"></button>
-</div>
-<div id="results">
-  <span id="final_span" class="final"></span>
-  <span id="interim_span" class="interim"></span>
-  <p>
-</div>
-<div class="center">
-  <div class="sidebyside" style="text-align:right">
-    <button id="copy_button" class="button" onclick="copyButton()">
-      Copy and Paste</button>
-    <div id="copy_info" class="info">
-      Press Control-C to copy text.<br>(Command-C on Mac.)
-    </div>
-  </div>
-  <div class="sidebyside">
-    <button id="email_button" class="button" onclick="emailButton()">
-      Create Email</button>
-    <div id="email_info" class="info">
-      Text sent to default email application.<br>
-      (See chrome://settings/handlers to change.)
-    </div>
-  </div>
-  <p>
-  <span id=result> </span>
-  <p>
-  <div id="div_language">
-    <select id="select_language" onchange="updateCountry()"></select>
-    &nbsp;&nbsp;
-    <select id="select_dialect"></select>
-  </div>
-</div>
-<script>
 var langs =
 [['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
@@ -223,20 +81,18 @@ function voice_cmd(cmd) {
 //$('a').bind('click', {}, run_cmd_this);
   
 
-function Sound(source,volume,loop)
-{
+function Sound(source,volume,loop) {
     this.source=source;
     this.volume=volume;
     this.loop=loop;
     var son;
     this.son=son;
     this.finish=false;
-    this.stop=function()
-    {
+    this.stop=function()     {
         document.body.removeChild(this.son);
     }
-    this.start=function()
-    {
+
+    this.start=function()   {
         if(this.finish)return false;
         this.son=document.createElement("embed");
         this.son.setAttribute("src",this.source);
@@ -246,13 +102,11 @@ function Sound(source,volume,loop)
         this.son.setAttribute("loop",this.loop);
         document.body.appendChild(this.son);
     }
-    this.remove=function()
-    {
+    this.remove=function()    {
         document.body.removeChild(this.son);
         this.finish=true;
     }
-    this.init=function(volume,loop)
-    {
+    this.init=function(volume,loop)    {
         this.finish=false;
         this.volume=volume;
         this.loop=loop;
@@ -264,25 +118,27 @@ $( document ).ready(function() {
     //t = ttsSound("Witaj! Serwer jest gotowy");
     //t.start();
 });
+
 for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
 }
+
 select_language.selectedIndex = 18;
 updateCountry();
 select_dialect.selectedIndex = 6;
 showInfo('info_start');
 
-  var u = new SpeechSynthesisUtterance();
-     u.text = 'Welcome';
-     u.lang = 'pl-PL';
-     u.rate = 1.2;
-     u.onend = function(event) { console.log('Wykonano w ' + event.elapsedTime + ' sekund.'); }
- //    speechSynthesis.speak(u);  
+var u = new SpeechSynthesisUtterance();
+u.text = 'Welcome';
+u.lang = 'pl-PL';
+u.rate = 1.2;
+u.onend = function(event) { console.log('Wykonano w ' + event.elapsedTime + ' sekund.'); }
+//speechSynthesis.speak(u);  
 
 function ttsSound(msg) {
    msg = encodeURIComponent(msg)
-   var foo=new Sound("https://translate.google.com/translate_tts?ie=UTF-8&tl=pl&q="+msg,100,false);
-   return foo
+   var res=new Sound("https://translate.google.com/translate_tts?ie=UTF-8&tl=pl&q="+msg,100,false);
+   return res
 }
 
 function updateCountry() {
@@ -396,6 +252,7 @@ function upgrade() {
 
 var two_line = /\n\n/g;
 var one_line = /\n/g;
+
 function linebreak(s) {
   return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
 }
@@ -479,6 +336,3 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
-</script>
-</body>
-</html>
